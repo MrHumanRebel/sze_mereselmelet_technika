@@ -37,14 +37,14 @@ Az eredeti mérési MAT/WAV/CSV/Excel fájlok a [matlab/adatok](matlab/adatok/) 
 
 ## Eredeti Moodle-fájlok
 
-**A mérési és oktatói források felkerültek a main ágra.** A feltöltött Moodle-archívumból 159, a külön letöltött dokumentumokból 19 eredeti fájl található meg az eredeti mappaszerkezetben. A \`matlab/adatok/\` mappában 30 közvetlenül használható bemenet van; ezek a \`matlab/\` gyökérből is betölthetők.
+**A mérési és oktatói források felkerültek a main ágra.** A feltöltött Moodle-archívumból 159, a külön letöltött dokumentumokból 19 eredeti fájl található meg az eredeti mappaszerkezetben. A `matlab/adatok/` mappában 30 közvetlenül használható bemenet van; ezek a `matlab/` gyökérből is betölthetők.
 
 - [Moodle-forrásmappák](forrasok/)
 - [MATLAB mérési adatfájlok](matlab/adatok/)
 - [Adatfájlok ellenőrzött jegyzéke](FORRAS_MANIFEST.json)
 - [Feltöltés állapota](ADATALLAPOT.md)
 
-A GitHub Actions minden átvitt állomány méretét és SHA-256-ellenőrzőösszegét ellenőrizte. Az importhoz használt 16 átviteli részt ezután törölte a jelenlegi \`main\` fáról.
+A GitHub Actions minden átvitt állomány méretét és SHA-256-ellenőrzőösszegét ellenőrizte. Az importhoz használt 16 átviteli részt ezután törölte a jelenlegi `main` fáról.
 
 ## Vizsga
 
