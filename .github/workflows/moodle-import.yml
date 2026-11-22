@@ -1,0 +1,102 @@
+name: Import original Moodle data and source files
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'import/staging/**'
+      - '.github/workflows/moodle-import.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: moodle-import-main
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Verify transferred ZIP and extract original resources
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, zipfile, json
+          parts=sorted(Path('import/staging').glob('part*.bin'))
+          if len(parts)!=16:
+              raise SystemExit('Expected 16 binary ZIP segments, found '+str(len(parts)))
+          outfile=Path('/tmp/GKLM_FKTM013_import.zip')
+          with outfile.open('wb') as out:
+              for part in parts:
+                  with part.open('rb') as source:
+                      while True:
+                          chunk=source.read(1024*1024)
+                          if not chunk: break
+                          out.write(chunk)
+          expected_size=32736565
+          expected_sha='e51875aa8b236d9b6bb4af54c4f8c0f30aba8b926c85cb4b212fb21a1cc468d3'
+          if outfile.stat().st_size!=expected_size:
+              raise SystemExit('ZIP size mismatch')
+          if hashlib.sha256(outfile.read_bytes()).hexdigest()!=expected_sha:
+              raise SystemExit('ZIP checksum mismatch')
+          with zipfile.ZipFile(outfile) as z:
+              names=z.namelist()
+              for info in z.infolist():
+                  p=Path(info.filename)
+                  if p.is_absolute() or '..' in p.parts:
+                      raise SystemExit('Unsafe archive path: '+info.filename)
+              z.extractall('.')
+          manifest=json.loads(Path('FORRAS_MANIFEST.json').read_text(encoding='utf8'))
+          if manifest['source_files']!=179:
+              raise SystemExit('Unexpected source file count: '+str(manifest['source_files']))
+          verified=0;excluded=0
+          for item in manifest['entries']:
+              if item.get('excluded_public'):
+                  excluded+=1
+                  continue
+              p=Path(item['git'])
+              if not p.is_file() or p.stat().st_size!=item['size']:
+                  raise SystemExit('Missing or wrong-size asset: '+str(p))
+              if hashlib.sha256(p.read_bytes()).hexdigest()!=item['sha256']:
+                  raise SystemExit('SHA-256 mismatch: '+str(p))
+              verified+=1
+          if verified!=178 or excluded!=1:
+              raise SystemExit(f'Manifest mismatch: {verified} verified, {excluded} excluded')
+          inputs=list(Path('matlab/adatok').iterdir())
+          if len([p for p in inputs if p.is_file()])!=30:
+              raise SystemExit('Expected 30 canonical MATLAB input files')
+          print(f'IMPORT VALIDATED: {verified} source files + 30 canonical datasets; 1 separately licensed manual excluded.')
+          PY
+      - name: Commit real files to main, remove transfer chunks
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f -- forrasok/moodle/ forrasok/moodle_foanyag/ matlab/adatok/ FORRAS_MANIFEST.json
+          git rm -r -q --cached --ignore-unmatch import/staging
+          rm -rf import/staging
+          if git diff --cached --quiet; then
+            echo "Already synchronized"
+            exit 0
+          fi
+          git commit -m "data(main): all provided Moodle sources, measurements and audio"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Moodle files committed to main"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "Could not push after 5 attempts" >&2
+          exit 1
