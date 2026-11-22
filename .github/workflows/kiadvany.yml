@@ -42,5 +42,15 @@ jobs:
           git add kiadvany/*.html kiadvany/*.pdf
           if ! git diff --cached --quiet; then
             git commit -m "build: frissített PDF és HTML tananyag"
-            git push origin HEAD:main
+            # Közben beérkező main commitot fast-forward/rebase mellett integráljuk.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep 2
+            done
+            echo "PDF push: öt alkalommal ütközött a main frissítésével" >&2
+            exit 1
           fi
