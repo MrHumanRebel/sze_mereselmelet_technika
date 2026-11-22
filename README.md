@@ -2,68 +2,53 @@
 
 **Széchenyi István Egyetem · GKLM_FKTM013 · 2026/27/1 · levelező**
 
-Na, itt nem az a terv, hogy a vizsga előtt fél órával ránézek pár PDF-re, aztán reménykedem. Ez a repó konkrétan arra van, hogy **nulláról eljussak a két vizsgarész teljesítéséig**. Sorrendben megtanulom a fizikát/matekot, megértem a MATLAB-kódot, aztán időre megoldok komplett példákat.
+Na tesó, ez a repó egyetlen célra van: **nulláról felkészülni az elméleti és MATLAB-vizsgára úgy, hogy tényleg értsem is a feladatokat**. Nem csak képleteket másolok: feladatszöveg → matematika → működő script → standard bizonytalanság → ábra → értelmes eredmény.
 
-## Start itt
-1. **[Hogyan tanuljam?](elmelet/00_HOGYAN_TANULJAM.md)** – sorrend, saját szabályok.
-2. **[16 elméleti tétel, 1–6](elmelet/01_06_meres_es_eloszlasok.md)** – mérés, bizonytalanság, statisztikai modellek.
-3. **[16 elméleti tétel, 7–12](elmelet/07_12_statisztika_regresszio.md)** – átlag, hibaterjedés, regresszió.
-4. **[16 elméleti tétel, 13–16](elmelet/13_16_idojel_fft.md)** – korreláció, trend, SG, Fourier, spektrumok.
-5. **[MATLAB nulláról](matlab/00_KEZDES.md)** – telepítés, parancsok, első indítás.
-6. **[Valódi feladattár](matlab/peldatar/README.md)** – 14 konkrét gyakorló- és mintafeladat.
-7. **[MATLAB vizsgareceptek](matlab/VIZSGA_RECEPT.md)** – melyik feladattípushoz melyik számolás.
-8. **[Papíros számpéldák](elmelet/PAPIROS_FELADATOK.md)** + **[képletlap](elmelet/KEPLETLAP.md)**.
-9. **[40 visszakérdező](elmelet/AKTIV_FELIDEZES.md)** + **[próbavizsgák](vizsga/02_PROBAVIZSGAK.md)**.
-10. **[7 napos felkészülési terv](vizsga/03_7_NAPOS_TERV.md)**.
+**Minden fejlesztés közvetlenül a main ágra megy.** Az első PR már beolvasztva, a további kódok is main commitok.
 
-## Tényleges vizsgaszabály a feltöltött vizsgarend alapján
-- **Számítógépes MATLAB:** 120 perc, mérési adat feldolgozása.
-- **Írásbeli elmélet:** 30 perc, kijelölt tétel.
-- Mindkettőn legalább **40%**, az átlagban minimum **50%** kell a ketteshez.
-- 50–59%: 2, 60–74%: 3, 75–84%: 4, 85% fölött: 5.
-- **Megjegyzés:** a 2026/27-es tematika szóbeli elemet is említ, míg a részletes 2024-es vizsgarend MATLAB + írásbeli formát ír. Az aktuális lebonyolítást a tanárral kell egyeztetni.
+## Első kattintások
+- **[TELJES 30 feladattípusos katalógus](vizsga/04_TELJES_FELADATKATALOGUS.md)** – melyik feladatra milyen módszer kell. A tényleges Moodle-feladatok, tematikai elemek és saját bővítések jelölve.
+- **[Tényleges Moodle-feladatok: geometria](matlab/peldatar/MEGOLDASOK_01_GEOMETRIA.md)** – téglatest, kúp, szferoid, gömb, cső.
+- **[Tényleges Moodle-feladatok: regresszió](matlab/peldatar/MEGOLDASOK_02_REGRESSZIO.md)** – radioaktív, barométer, baba.
+- **[Tényleges Moodle-feladatok: időjelek](matlab/peldatar/MEGOLDASOK_03_IDOJELEK.md)** – rezgés, szikla, szonár, ACF.
+- **[Tényleges Moodle-feladatok: frekvenciatér](matlab/peldatar/MEGOLDASOK_04_FREKVENCIATER.md)** – fuvola, gitár, motorhang, egyenirányító, FFT.
+- **[Tényleges Moodle-feladatok: extra](matlab/peldatar/MEGOLDASOK_05_KIEGESZITOK.md)** – villanymotor hatásfokmező, ADC, kalibrálás, CI.
+- **[MATLAB feladattár és forrásnevek](matlab/peldatar/README.md)** – az egyes .m fájlokhoz melyik .mat/.wav kell.
+- **[MATLAB nulláról](matlab/00_KEZDES.md)** és **[MATLAB döntési fa](matlab/VIZSGA_RECEPT.md)**.
+- **[Tesztelési és CI-leírás](matlab/README_TESZTELES.md)**.
 
-## MATLAB quickstart
-~~~matlab
-cd('A_REPOD_HELYE/matlab')
-run('setup.m')
-run('run_tests.m')
-run('demo_01_statisztika.m')
-run('demo_02_hibaterjedes.m')
-run('demo_03_regresszio.m')
-run('demo_04_idojel.m')
-run('demo_05_fft_korrelacio.m')
-~~~
-Ezután másold a **saját Moodle-letöltésedben lévő MAT/WAV fájlokat** a MATLAB aktuális munkamappájába, és futtasd például:
-~~~matlab
-run('peldatar/09_radioaktiv.m')
-run('peldatar/11_szonar.m')
-~~~
+## Elméleti rész
+- [Tanulási sorrend](elmelet/00_HOGYAN_TANULJAM.md)
+- [1–6. tétel](elmelet/01_06_meres_es_eloszlasok.md)
+- [7–12. tétel](elmelet/07_12_statisztika_regresszio.md)
+- [13–16. tétel](elmelet/13_16_idojel_fft.md)
+- [Plusz 2026-os tematika](elmelet/17_KIEGESZITO_2026_TEMATIKA.md)
+- [Képletlap](elmelet/KEPLETLAP.md), [papíros példák](elmelet/PAPIROS_FELADATOK.md), [40 visszakérdező](elmelet/AKTIV_FELIDEZES.md)
 
-## Mi van ténylegesen itt?
-- 16 hivatalos elméleti témakör magyarázva, képletekkel és gyakori hibákkal.
-- Kiegészítő 2026/27-es témák: konfidenciaintervallum, ADC, koherencia stb.
-- Papíron végigszámolt példák, képletlap, tanulókártyák.
-- MATLAB-függvények: outlier-kezelés, statisztika, OLS paraméterhibákkal és kovarianciával, SG, mozgóátlag, csúcsdetektálás, FFT, FFT-alapú korreláció, Welch PSD/CSD/koherencia.
-- Önállóan futtatható szintetikus demók és a konkrét tanári feladatokhoz illesztett szkriptek.
-- Smoke tesztek MATLAB-kódban.
-- Forrásaudit: **[FORRASOK_ES_LEFEDETSEG.md](FORRASOK_ES_LEFEDETSEG.md)**.
+## Vizsga
+- [Felkészülési terv 7 napra](vizsga/03_7_NAPOS_TERV.md), [próbavizsgák](vizsga/02_PROBAVIZSGAK.md), [stratégia, pontozás](vizsga/01_STRATEGIA_ES_PONTOZAS.md).
+- A feltöltött **2024-es vizsgarend szerint** MATLAB 120 perc + írásbeli elmélet 30 perc, külön-külön minimum 40%, végső eredmény átlag ≥50%.
+- **Eltérő hivatalos dokumentum:** a 2026/27-es tantárgytematika írásbeli **és szóbeli** vizsgát említ. A tényleges aktuális lebonyolítást az oktatóval kell megerősíteni.
 
-## Ami fontos, mert ezen tényleg lehet bukni
-**Mérési szórás ≠ átlag standard hibája.** A durva hibát nem elég megjelölni, indokoltan kezelni kell, majd újraellenőrizni. A korreláció lags tengelye mintákban van. Az FFT-hez frekvenciatengely kell. A nemlineáris modell fizikai paramétereinek szórását is ki kell számolni.
+## Indítás MATLAB-ban
+1. Csomagold ki a saját Moodle-MAT/WAV adatfájlokat a MATLAB Current Folderbe. A nyilvános repó nem tartalmaz szerzői jogilag nem tisztázott oktatói anyagokat.
+2. MATLAB Current Folder = a repó matlab mappája.
+3. Parancsablakban: **setup**.
+4. Majd: **run_tests**, **run_extended_tests**; a tényleges Moodle-fájlokkal **run_source_data_tests**.
+5. Demók: **run('demo_01_statisztika.m')** stb.
+6. Feladat: **run('peldatar/09_radioaktiv.m')**, **run('peldatar/11_szonar.m')**.
 
-**A saját Moodle-adatfájljaid nem kerültek a nyilvános repóba.** Az egyetemi PDF-ek és MAT/WAV fájlok szerzői jogát nem tudom igazolni, ezért csak az eredeti, saját kidolgozást publikáltam. A tanuláshoz az adatokat a feltöltött archívumból helyben használom.
+## Amit fejből kell tudnom
+- s=std(x) egyedi minta szórása; SEM=s/sqrt(n) az átlag becsült standard hibája független adatokra.
+- Durva hiba előtt/után ellenőrzés, több oszlopnál összetartozó teljes sorok kezelése.
+- Gauss-féle hibaterjedésnél analitikus gradiens, és ha kell, kovariancia.
+- Regresszióból nem elég m,b, kell a paraméterhiba is.
+- xcorr késését mintáról s-ra váltom, visszhang távolságát kettővel osztom.
+- FFT-hez **helyes frekvenciatengely, helyes egyoldali normálás és Nyquist**.
 
-**Ellenőrzési státusz:** a matematikai képletek és tanári forráspéldák alapján ellenőrizve; a MATLAB-kódokhoz automatizált run_tests.m készült, de a jelen környezetben nem állt rendelkezésre futtatható MATLAB/Octave, így **valódi MATLAB-futtatási tesztet nem állítok**. Az első helyi indításkor futtasd a teszteket és a 14 példát.
+## Forrás és felelősség
+[Forrásaudit](FORRASOK_ES_LEFEDETSEG.md). A feltöltött anyag egy része régebbi szemeszterből származik, és két szöveges feladathoz (csapágygolyó, egyenirányító) az eredeti .mat fájl hiányzott. Ezekhez **külön jelölt szintetikus mintát** készítettem, nem kitalált oktatói mérési adatot.
 
-## Strukturális térkép
-~~~text
-elmelet/        16 tétel, képletlap, papíros feladatok, visszakérdezés, plusz 2026-os anyag
-matlab/common/  újrafelhasználható MATLAB-függvények
-matlab/demo_*.m szintetikus feladatok
-matlab/peldatar/ valódi Moodle-feladatokra írt megoldások
-matlab/run_tests.m alapellenőrzések
-vizsga/         időkeret, pontozás, próbavizsga, tanulási terv
-~~~
+**QA:** automatizált GNU Octave-kompatibilitási munkafolyamat van a GitHub Actions alatt. Ez nem egyenértékű a laborban futtatott MATLAB-lal. Az első CI-körben talált Welch-keresztspektrum összeadási hibát javítottam; a végső státuszt a GitHub Actions aktuális eredménye mutatja. A MATLAB-laborban külön futtatási ellenőrzés szükséges.
 
-Ha egy feladatot csak a script futtatásával tudok megoldani, de nem tudom elmagyarázni a képletet, az még nincs kész. **Cél: önálló megoldás és hibátlan indoklás.**
+A cél nem az, hogy a kód valahogy kiadjon egy számot. A cél, hogy **minden sorát és minden eredményt el tudjak magyarázni a vizsgán.**

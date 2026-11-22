@@ -1,30 +1,48 @@
-# Vizsgafeladat-megoldások, valós Moodle-adatokhoz
+# Megoldott feladatok és saját gyakorlóvariánsok
 
-**Használat:** futtasd a matlab/setup.m scriptet, majd az adott feladathoz tartozó .m fájlt. A tanári ZIP-ekből másold a forrás .mat/.wav állományt a MATLAB Current Folderbe (vagy lépj arra a mappára). A repo nem publikálja a Moodle-on megosztott tanári állományokat.
+**Eredeti** = a csatolt tanári PDF / Moodle-minta alapján önállóan írt MATLAB-kód. **Saját** = a tananyagból megalkotott, nem igazolt korábbi vizsgafeladat.
 
-| Script | Eredeti adatfájl | Feladattípus |
+A könnyen tanulható levezetések külön fájlokban:
+- MEGOLDASOK_01_GEOMETRIA.md
+- MEGOLDASOK_02_REGRESSZIO.md
+- MEGOLDASOK_03_IDOJELEK.md
+- MEGOLDASOK_04_FREKVENCIATER.md
+- MEGOLDASOK_05_KIEGESZITOK.md
+
+| Script | Kért adatfájl | Típus / eredet |
 |---|---|---|
-| 01_teglatest.m | gyakorlo_peldak/feladat1/teglatest1.mat | Durva hibák, méretek, sűrűség, hibaterjedés |
-| 02_korkup.m | gyakorlo_peldak/feladat2/korkup1.mat | Kúptömeg és bizonytalanság, mm→m |
-| 03_rezges.m | gyakorlo_peldak/feladat3/rezges5.mat | SG, csúcskeresés, FFT |
-| 04_visszhang_szikla.m | gyakorlo_peldak/feladat4/hang_jelek.mat | 1 kHz, 340 m/s |
-| 05_fuvola.m | gyakorlo_peldak/feladat5/fuvola8.wav | WAV, legnagyobb spektrális csúcsok, ACF |
-| 06_barometer.m | gyakorlo_peldak/feladat6/barometer.mat | Ln-linearizálás, a modellparaméterek bizonytalansága |
-| 07_szferoid.m | otthoni gyakorláshoz/szferoid1.mat | Ellipszoid, térfogat, sűrűség |
-| 08_baba.m | konzultáción használt fájlok/baba1.mat | Szakaszos regresszió, váltási idő |
-| 09_radioaktiv.m | otthoni gyakorláshoz/rad_bomlas.mat | Exponenciális bomlás |
-| 10_cso.m | otthoni gyakorláshoz/cso_adatok.mat | Tömeg és tehetetlenségi nyomaték |
-| 11_szonar.m | vizsgafeladat és megoldása/hang_jelek1.mat | 22 kHz, 1500 m/s, keresztkorreláció |
-| 12_motorhang.m | 5. konzultáció/motorhang.mat | Két jel spektrumkülönbsége |
-| 13_gitar.m | 5. konzultáció/guitar_A.wav | WAV spektrum |
-| 14_egyeniranyito_sablon.m | külön beszerezhető egyeniranyito.mat | DC + harmonikus keresés, csak ha adat rendelkezésre áll |
+| 01_teglatest.m | teglatest1.mat | eredeti gyakorlo_peldak/feladat1 |
+| 02_korkup.m | korkup1.mat | eredeti feladat2 |
+| 03_rezges.m | rezges5.mat | eredeti feladat3 |
+| 04_visszhang_szikla.m | hang_jelek.mat | eredeti feladat4 |
+| 05_fuvola.m | fuvola8.wav | eredeti feladat5 |
+| 06_barometer.m | barometer.mat | eredeti feladat6 |
+| 07_szferoid.m | szferoid1.mat | eredeti vizsgaminta |
+| 08_baba.m | baba1.mat | eredeti vizsgaminta |
+| 09_radioaktiv.m | rad_bomlas.mat | eredeti feladat PDF |
+| 10_cso.m | cso_adatok.mat | eredeti feladat PDF |
+| 11_szonar.m | hang_jelek1.mat | eredeti vizsgapélda |
+| 12_motorhang.m | motorhang.mat | 5. konzultáció |
+| 13_gitar.m | guitar_A.wav | 5. konzultáció |
+| 14_egyeniranyito_sablon.m | egyeniranyito.mat | eredeti feladatszöveg, **adat hiányzik**, ezért a fájl csak sablon |
+| 15_csapagygolyo.m | csapagygolyo_atmero.mat | eredeti feladatszöveg, **adat hiányzik** |
+| 16_egyeniranyito_szimulacio.m | nincs – saját adatok | **saját szintetikus** egyenirányító |
+| 17_inga.m | belső számsor | 1. konzultációs példa |
+| 18_napfolt_acf.m | havi_napfolt.csv | 4. konzultáció |
+| 19_nemstacionarius_demo.m | non_stat_signal.mat opcionális | 4. konzultáció; fájl nélkül szintetikus |
+| 20_villanymotor_hatasfok.m | villanymotor.mat | extra konzultáció |
+| 21_ket_szenzor_kalibracio.m | nincs – saját adatok | saját tematikai variáns |
+| 22_egyenletes_es_poisson_feladat.m | nincs – saját adatok | elméleti tételsorból vett saját számpéldák |
 
-### Forrás és feladat közötti különbség
-- A **szonár** tanári megoldásában a nyers keresztkorrelációt 81 pontosan simítják. A nyers legnagyobb csúcs a feltöltött adatokon **nem** a helyes fizikai válaszhoz vezet; ezért a mi megoldásunknál a csúcsválasztás előtt ugyanígy simítunk, és kontrollként vizuálisan is ellenőrzünk.
-- A **barométer** oktatói magyarázata szerint a forrásadatok önkényes mértékegységekben vannak; így nem szabad automatikusan SI egységű légsűrűséget állítani. A fizikai modell csak akkor értelmezhető egyértelműen SI-ban, ha a konverzió ismert.
-- A **baba** konkrét outlier/szegmentálási határait a feltöltött 2026-os tanári mintamegoldás használja. Vizsgán új adatsornál **nem** ezeket az indexeket kell vakon átvenni.
-- A **cső** dimenzióinál 2000, sűrűségénél csak 25 mérés szerepel; ennek megfelelően külön becsüljük a közép szórását.
-- A visszhang távolságának becslési tartományát nem szabad dokumentálás nélkül standard szórásnak nevezni.
+További demók: demo_01…demo_21 (egyes számoknál hiány lehet, a tényleges fájlokat nézd). Minden adatérzékeny scriptnél az egység és a változónevek a feltöltött forrás szerint vannak jelölve.
 
-### Értékelői checklist
-Minden szkriptben legyen bemeneti ellenőrzés, grafikon, számítás, egység, bizonytalanság és legalább egy értelmező komment. Ha az adatfájl nincs jelen, a script szándékosan hibát ad – nem gyárt helyette hamis adatokat.
+**Adatcsomag:** a Moodle-on talált 14 MAT/WAV fájlból készült külön felhasználói ZIP. A nyilvános repóba nem töltöttem fel a tanári fájlokat. A napfolt CSV és a non_stat_signal MAT a nagy eredeti archívumban találhatók, de a külön adatcsomagban nem szerepeltek.
+
+**Valós tanári anyagban feltárt csapdák:**
+1. Barométer: 3 nem pozitív p, log előtt ki kell zárni és indokolni.
+2. Sziklafal: több zajos CCF-csúcs; vak absmax nem elég.
+3. Szonár: 81 pontos CCF-simítással kb. 1296 m.
+4. Szferoid: a számolt sűrűség fizikailag furcsa a „márvány” leíráshoz képest.
+5. Cső: 4σ-küszöbön lévő adat és a tanári értelmezés eltérhet.
+
+**Futtatás:** a matlab könyvtárban setup, a megfelelő adatfájl Current Folderbe másolása után run('peldatar/09_radioaktiv.m') stb. A scriptet módosítás nélkül más adatokra átvenni csak akkor szabad, ha a fizikai modell, mintavétel és változónevek egyeznek.
