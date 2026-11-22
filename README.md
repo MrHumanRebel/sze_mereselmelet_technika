@@ -33,19 +33,18 @@ run('demo_01_statisztika.m')
 run('peldatar/09_radioaktiv.m')
 ```
 
-Néhány eredeti MAT fájl már benne van a repóban a [matlab/adatok](matlab/adatok/) mappában (baba, barométer, kúp, szferoid). A további forrásadatos példákhoz az eredeti MAT/WAV állományok szükségesek. Az adatok változóneveit és az adott feladat mérési egységeit a `matlab/peldatar/README.md` tartalmazza. A tesztfuttatások a GitHub [Actions](../../actions) alatt is követhetők.
+Az eredeti mérési MAT/WAV/CSV/Excel fájlok a [matlab/adatok](matlab/adatok/) mappában és a `matlab/` munkamappában is elérhetők. Az adatok változóneveit és az adott feladat mérési egységeit a `matlab/peldatar/README.md` tartalmazza. A tesztfuttatások a GitHub [Actions](../../actions) alatt is követhetők.
 
 ## Eredeti Moodle-fájlok
 
-A korábban hiányzó MAT, WAV, CSV, Excel, DAT, tanári MATLAB-kód és feladatállományok **importcsomagja** külön készült el. Az archívum 160 eredeti fájlt tartalmazott; a nyilvános importra 159 van előkészítve, mert a MathWorks \`UsingMatlab.pdf\` kézikönyve újraközlésre nem engedélyezett.
+**A mérési és oktatói források felkerültek a main ágra.** A feltöltött Moodle-archívumból 159, a külön letöltött dokumentumokból 19 eredeti fájl található meg az eredeti mappaszerkezetben. A \`matlab/adatok/\` mappában 30 közvetlenül használható bemenet van; ezek a \`matlab/\` gyökérből is betölthetők.
 
-A teljes készlet még **nem** szerepel a GitHubon. A csomag ZIP-jét a beszélgetésben lehet letölteni; a repositoryban a [forrásimportáló](scripts/import_moodle_bundle.py) végzi a SHA-256 ellenőrzést, és kizárólag a \`main\` ágban, force push nélkül rögzíti az állományokat.
+- [Moodle-forrásmappák](forrasok/)
+- [MATLAB mérési adatfájlok](matlab/adatok/)
+- [Adatfájlok ellenőrzött jegyzéke](FORRAS_MANIFEST.json)
+- [Feltöltés állapota](ADATALLAPOT.md)
 
-\`\`\`bash
-python scripts/import_moodle_bundle.py ~/Downloads/Mereselmelet_GKLM_FKTM013_teljes_GitHub_import.zip
-\`\`\`
-
-Az ellenőrzött archívum mappaszerkezetét, az eredeti fájlokat és a rendezett adatkönyvtárat a [forrástár leírása](forrasok/README.md) ismerteti. A teljes import után az eredeti MATLAB-adatfájlok a \`matlab/adatok/\` alatt is elérhetők.
+A GitHub Actions minden átvitt állomány méretét és SHA-256-ellenőrzőösszegét ellenőrizte. Az importhoz használt 16 átviteli részt ezután törölte a jelenlegi \`main\` fáról.
 
 ## Vizsga
 

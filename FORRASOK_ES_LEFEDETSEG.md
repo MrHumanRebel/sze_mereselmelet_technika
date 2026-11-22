@@ -1,6 +1,6 @@
 # Forrásaudit és lefedettség
 
-**A saját feltöltött Moodle-archívum alapján készülő, eredeti magyarázatok és kódok.** A tanári PDF-ek és más hallgatók anyagainak szövegét nem másoltam a nyilvános GitHub-repóba. A forrásarchívumot őrizd meg helyben; a MATLAB példák egy része a belőle kimásolt MAT/WAV-fájlokat használja.
+**Eredeti, saját magyarázatok és MATLAB-megoldások a Moodle-források mellett.** Az eredeti fájlok változatlan formában a `forrasok/moodle/` és `forrasok/moodle_foanyag/` mappákban találhatók; a saját kidolgozás az `elmelet/`, `matlab/` és `vizsga/` könyvtárakban. A forrásfájlok ellenőrzőösszege a `FORRAS_MANIFEST.json` állományban szerepel.
 
 | Feltöltött fájl | Mire használom? | Hol találod? |
 |---|---|---|

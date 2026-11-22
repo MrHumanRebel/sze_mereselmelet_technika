@@ -1,14 +1,16 @@
 # Moodle-forrásanyagok
 
-A tantárgyhoz tartozó eredeti mérési adatokat (MAT, WAV, CSV, Excel, DAT), konzultációs kódokat, példafeladatokat és segédleteket itt lehet megőrizni az eredeti mappaszerkezetben, a saját MATLAB-felkészítőtől elkülönítve.
+Az eredeti kurzusfájlok és a saját kidolgozások külön mappában szerepelnek.
 
-A **160 fájlt tartalmazó, kibontott archívumhoz** készített importcsomag:
+| Mappa | Tartalom |
+|---|---|
+| [moodle/](moodle/) | 159 eredeti állomány a kibontott Moodle-csomagból |
+| [moodle_foanyag/](moodle_foanyag/) | 19 külön tananyag és információs dokumentum |
+| [../matlab/adatok/](../matlab/adatok/) | 30 közvetlen MATLAB-bemenet |
+| [../matlab/](../matlab/) | Ugyanezen bemenetek egyszerű \`load\`, \`audioread\`, \`readmatrix\` eléréshez |
 
-- eredeti mappák: \`forrasok/moodle/\`
-- közvetlenül futtatható adatok: \`matlab/adatok/\`
-- hash és méret ellenőrzése: \`FORRAS_MANIFEST.json\`
-- egyetlen automatikus \`main\`-ágas import: \`scripts/import_moodle_bundle.py\`
+Az egyes eredeti forrásfájlok SHA-256 hashét és méretét a [FORRAS_MANIFEST.json](../FORRAS_MANIFEST.json) dokumentálja. A fájlok GitHub Actions segítségével, teljes hash-ellenőrzéssel kerültek fel a \`main\` ágra.
 
-A GitHub-összeköttetés szövegfájlokat és kisebb bináris blobokat tud írni, de a teljes, több tíz MB-os archívumot közvetlenül a jelen beszélgetésből nem tudta átvinni. **A források teljes feltöltése ezért csak a ZIP-import lefuttatása után tekinthető késznek.**
+A \`info2/info2/UsingMatlab.pdf\` harmadik féltől származó, kifejezetten újraközlést tiltó kézikönyvet nem publikáltam. A gyártói vagy oktatói kiadványok nyilvános elérhetősége önmagában nem jelenti a szerzői jogi korlátozások hiányát.
 
-A csomag nem tartalmazza a nyilvános importhoz a \`info2/info2/UsingMatlab.pdf\` gyártói kézikönyvet, mert kifejezett újraközlési korlátozást tartalmaz. A többi oktatói PDF és kód nyilvános újraközlésének jogosultságát szintén érdemes ellenőrizni. Az, hogy a Moodle-on hozzáférhető, önmagában nem szabad licenc.
+Az eredeti \`csapagygolyo_atmero.mat\` és \`egyeniranyito.mat\` a feltöltött archívumban sem szerepelt. Ezekhez a repó külön, szintetikusként jelölt mintafeladatokat tartalmaz.

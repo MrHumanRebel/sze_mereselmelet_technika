@@ -36,7 +36,7 @@ A könnyen tanulható levezetések külön fájlokban:
 
 További demók: demo_01…demo_21 (egyes számoknál hiány lehet, a tényleges fájlokat nézd). Minden adatérzékeny scriptnél az egység és a változónevek a feltöltött forrás szerint vannak jelölve.
 
-**Adatcsomag:** a Moodle-on talált 14 MAT/WAV fájlból készült külön felhasználói ZIP. A nyilvános repóba nem töltöttem fel a tanári fájlokat. A napfolt CSV és a non_stat_signal MAT a nagy eredeti archívumban találhatók, de a külön adatcsomagban nem szerepeltek.
+**Adatcsomag:** a Moodle-on talált 14 MAT/WAV fájlból készült külön felhasználói ZIP. Az eredeti MATLAB-adatfájlok már szerepelnek a repóban, a `matlab/adatok/` mappában. A napfolt CSV és a non_stat_signal MAT a nagy eredeti archívumban találhatók, de a külön adatcsomagban nem szerepeltek.
 
 **Valós tanári anyagban feltárt csapdák:**
 1. Barométer: 3 nem pozitív p, log előtt ki kell zárni és indokolni.

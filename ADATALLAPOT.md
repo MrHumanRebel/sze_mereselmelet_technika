@@ -1,13 +1,21 @@
 # Adat- és forrásállapot
 
-Az oktatói feladatokat, a hozzájuk tartozó mérési bemeneteket és a külső segédleteket külön kezelem.
+**Feltöltés kész — main.** A 32 736 565 bájtos importcsomag GitHub Actions segítségével SHA-256 ellenőrzés után került kibontásra. Az eredeti, 179 forrásfájlból **178** található a nyilvános repóban; egy kifejezett újraközlési tilalmat tartalmazó MathWorks-kézikönyv kimaradt.
 
-**Repóban ellenőrzött eredeti MAT fájlok:** baba1, barometer, korkup1, szferoid1. Ellenőrzőösszegek: matlab/adatok/README.md.
+| Állománycsoport | Jelenlegi szám |
+|---|---:|
+| Eredeti kibontott Moodle-fájlok | 159 |
+| Külön Moodle-alapanyagok | 19 |
+| MATLAB-bemenetek a \`matlab/adatok/\` mappában | 30 |
+| WAV-bemenetek az adatok mappában | 3 |
+| MAT-bemenetek az adatok mappában | 14 |
+| CSV-bemenetek az adatok mappában | 2 |
+| Excel-bemenetek az adatok mappában | 4 |
 
-**Helyi adatcsomagban rendelkezésre álló, még nem tükrözött források:** teglatest1, rezges5, fuvola8.wav, hang_jelek, rad_bomlas, cso_adatok, hang_jelek1, motorhang, guitar_A.wav és továbbiak. A MATLAB-feladatok ezekre a forrásfájlokra számítanak, ha a hozzájuk tartozó scriptet futtatjuk.
+A 30 bemenet a MATLAB-munkamappában (\`matlab/\`) is megtalálható, ezért nem kell manuálisan másolgatni a fájlokat. A két másolat Git-blobazonosítója egyezik.
 
-**Hiányzó eredeti inputok:** a feltöltött feladatleírás említi a csapagygolyo_atmero.mat és egyeniranyito.mat állományt, de az átadott Moodle-archívumban nem szerepelt. Ezekhez külön, megjelölt szintetikus gyakorló szkript van.
+**A forráscsomagból eredetileg is hiányzik:** \`csapagygolyo_atmero.mat\`, \`egyeniranyito.mat\`. Az ezekhez adott szintetikus demók nem eredeti mért adatok.
 
-**Publikációs státusz:** a nyilvános egyetemi hozzáférés nem azonos a szabad újraközlés jogával. Az info2.zip része egy MathWorks Using MATLAB kézikönyv, amely kifejezett copyright és reprodukálási korlátozás alatt áll. Ezt nem tesszük nyilvános GitHubra. Más dokumentumok licencéről nem állítom, hogy CC0, ha ilyen nyilatkozat nincs.
+**Egyetlen tudatosan kihagyott PDF:** \`info2/info2/UsingMatlab.pdf\`, a gyártói újraközlési korlátozás miatt.
 
-A repó **saját elméleti PDF/HTML kiadványai** szabadon generálhatók az itt található forrásból.
+Tételes eredet, méret és SHA-256: [FORRAS_MANIFEST.json](FORRAS_MANIFEST.json).
