@@ -6,6 +6,7 @@ A teljes elméleti és MATLAB-felkészítő **nyomtatható PDF-ben** és **offli
 |---|---|---|
 | Elméleti jegyzet (16 tétel) | [Megnyitás](Mereselmelet_es_technika_GKLM_FKTM013_Elmelet.pdf) | [Offline HTML](Mereselmelet_es_technika_GKLM_FKTM013_Elmelet.html) |
 | MATLAB-feladattár és megoldások | [Megnyitás](Mereselmelet_es_technika_GKLM_FKTM013_MATLAB.pdf) | [Offline HTML](Mereselmelet_es_technika_GKLM_FKTM013_MATLAB.html) |
+| Képletlap | [Megnyitás](Mereselmelet_es_technika_GKLM_FKTM013_Kepletlap.pdf) | [Offline HTML](Mereselmelet_es_technika_GKLM_FKTM013_Kepletlap.html) |
 
 ## Újragenerálás
 
