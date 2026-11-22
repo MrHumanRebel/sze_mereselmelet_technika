@@ -1,27 +1,27 @@
 function [x,varName]=mat_vector_auto(filename,preferredNames)
-% Forrásból hiányzó/bárhogy nevezett, de EGYÉRTELMŰ mérési vektor betöltése.
-% Több lehetséges vektor esetén inkább hibát adunk, ne találjunk ki változót.
-if nargin<2,preferredNames={'d','D','atmero','atmero_mm','diameter','csapagygolyo_atmero'};end
-if ~isfile(filename),error('Hiányzik a mérési fájl: %s',filename);end
-S=load(filename);
-f=fieldnames(S);candidates={};
-for j=1:numel(f)
-  v=S.(f{j});
-  if isnumeric(v)&&isvector(v)&&numel(v)>=3
-    candidates{end+1}=f{j}; %#ok<AGROW>
+% MAT-ban szereplő egyetlen mérési vektor megbízható betöltése.
+if nargin<2,preferredNames={'d','D','atmero','diameter','csapagygolyo_atmero'};end
+if ~isfile(filename),error('Hiányzik a fájl: %s',filename);end
+S=load(filename);names=fieldnames(S);numericNames={};
+for j=1:numel(names)
+  v=S.(names{j});
+  if isnumeric(v) && isvector(v) && numel(v)>=3
+    numericNames{end+1}=names{j}; %#ok<AGROW>
   end
 end
-chosen={};
+selected={};
 for j=1:numel(preferredNames)
- if ismember(preferredNames{j},candidates),chosen{end+1}=preferredNames{j};end %#ok<AGROW>
+  if ismember(preferredNames{j},numericNames)
+    selected{end+1}=preferredNames{j}; %#ok<AGROW>
+  end
 end
-if numel(chosen)==1
-    varName=chosen{1};
-elseif isempty(chosen)&&numel(candidates)==1
-    varName=candidates{1};
+if numel(selected)==1
+ varName=selected{1};
+elseif isempty(selected) && numel(numericNames)==1
+ varName=numericNames{1};
 else
-    error('Nem egyértelmű MAT-változó; nézd meg: whos(''-file'',''%s'')',filename);
+ error('Nem egyértelmű változó. Ellenőrizd: whos(''-file'',''%s'')',filename);
 end
-x=double(S.(varName)(:));
-if any(~isfinite(x)),error('Nem minden mért adat véges.');end
+v=S.(varName);x=double(v(:));
+if any(~isfinite(x)),error('NaN vagy Inf a mérési adatok között.');end
 end
