@@ -1,0 +1,257 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MATLAB-feladattár · GKLM_FKTM013</title><style>@page{size:A4;margin:19mm 21mm 19mm 21mm;
+@top-left{content:"MÉRÉSELMÉLET ÉS -TECHNIKA";font:600 8pt "Inter",sans-serif;letter-spacing:.12em;color:#7a8595}
+@top-right{content:"GKLM_FKTM013";font:600 8pt "Inter",sans-serif;color:#7a8595}
+@bottom-left{content:"JEGYZET · 2026/27";font:500 8pt "Inter",sans-serif;color:#98a3b0}
+@bottom-right{content:counter(page,decimal-leading-zero);font:600 8pt "Inter",sans-serif;color:#7a8595}}
+@page cover{margin:0;
+@top-left{content:none}@top-right{content:none}@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}
+html{font-family:"Inter","DejaVu Sans",sans-serif;color:#19212b;font-size:10pt}
+body{margin:0;background:white}a{color:#006ed8;text-decoration:none}
+.cover{page:cover;break-after:page;height:297mm;padding:38mm 25mm;background:#fff;position:relative}
+.kicker{font-size:9pt;font-weight:700;letter-spacing:.16em;color:#056cdb}
+.cover h1{font-size:39pt;font-weight:750;line-height:1.14;letter-spacing:-.055em;margin:22mm 0 14mm}
+.cover h1 span{font-weight:500;color:#7f8896}
+.lead{font-size:13pt;color:#424d5b;max-width:138mm;line-height:1.55}
+.rule{width:22mm;height:2px;background:#006fe8;margin-top:26mm}
+.foot{position:absolute;bottom:28mm;left:25mm;right:25mm;border-top:1px solid #dfe5ec;padding-top:5mm;font-size:9pt;color:#707c8b}
+.index{break-after:page;padding-top:17mm}
+.index h2{font-size:30pt;letter-spacing:-.045em;margin:0 0 6mm}
+.index>p{font-size:11pt;color:#576272;line-height:1.6}
+.index-list{columns:2;column-gap:12mm;margin-top:9mm}
+.idx{break-inside:avoid;padding:4mm 0;border-bottom:1px solid #e8edf3;font-size:9.5pt;line-height:1.4}
+.idx b{color:#006ed8;display:inline-block;min-width:7mm}
+.topic{break-before:page;padding-top:12mm}
+.topic-number{font-size:9pt;letter-spacing:.15em;font-weight:750;color:#006ed8}
+.topic h2{font-size:25pt;letter-spacing:-.046em;line-height:1.18;margin:4mm 0 9mm}
+.topic h3{font-size:10pt;font-weight:700;margin:8mm 0 2mm;color:#596575;letter-spacing:.02em}
+.topic p{font-size:10.2pt;line-height:1.57;color:#293440;margin:0 0 4mm;orphans:3;widows:3}
+.topic>div.markdown>p:first-child{font-size:11pt;line-height:1.57;color:#354352}
+.topic blockquote{border-left:2px solid #2c7ce5;margin:5mm 0;padding:2mm 5mm;background:#eef5ff;color:#203a5a}
+.topic blockquote p{margin:0}
+.topic strong{font-weight:730;color:#172333}
+.topic code{font-family:"DejaVu Sans Mono",monospace;font-size:8.4pt;color:#0861c5;background:#f1f5fb;border-radius:2pt;padding:1pt}
+.topic pre{white-space:pre-wrap;background:#f4f7fb;padding:4mm;border-radius:7pt;font-size:8pt;overflow-wrap:anywhere}
+.topic ul,.topic ol{padding-left:6mm;line-height:1.52}
+.topic li{margin:1.7mm 0;color:#2c3643}
+.topic hr{border:0;border-top:1px solid #e4e9ef}
+.topic table{border-collapse:collapse;width:100%;font-size:8.4pt}
+.topic th,.topic td{border-bottom:1px solid #e5eaf0;padding:2.5mm 2mm;text-align:left;vertical-align:top}
+.topic th{color:#006ad7}
+.topic h2,.topic h3,.topic blockquote,.topic pre{break-after:avoid}
+.topic li,.topic blockquote,.topic pre{break-inside:avoid}
+.topic .markdown{padding-bottom:4mm}
+.toplink{font-size:9pt;color:#6f7b89}
+.page-footer-note{margin-top:13mm;color:#8a94a1;font-size:8.5pt}
+@media screen{body{background:#f2f4f8}.cover,.index,.topic{width:210mm;min-height:297mm;background:white;margin:20px auto;padding-left:21mm;padding-right:21mm;box-shadow:0 5px 20px #c4cad333}}
+
+/* A generált PDF és HTML a main ágon verziózott kiadvány. */
+</style></head><body>
+<section class="cover"><div class="kicker">SZÉCHENYI ISTVÁN EGYETEM · GKLM_FKTM013</div><div class="rule"></div>
+<h1>Méréselmélet<br><span>és -technika.</span></h1><p class="lead">MATLAB-feladattár<br>Konkrét példák és lépésenkénti megoldások</p>
+<div class="foot">2026/27 · 1. félév</div></section>
+<section class="index"><div class="kicker">TARTALOM</div><h2>MATLAB-feladattár</h2>
+<p>Konkrét példák és lépésenkénti megoldások. A füzet eredeti, szerkeszthető feladatkidolgozásokból épül.</p>
+<div class="index-list"><div class="idx"><b>01</b>A. Téglatest, 100 darab – eredeti feladat1</div>
+<div class="idx"><b>02</b>B. Egyenes körkúp, 100 darab – eredeti feladat2</div>
+<div class="idx"><b>03</b>C. Forgási ellipszoid, 90 darab – valódi vizsgaminta</div>
+<div class="idx"><b>04</b>D. Csapágygolyó – csak szöveges feladat, az adat nem volt mellékelve</div>
+<div class="idx"><b>05</b>E. Csődarab – valós feladat, méretek + tehetetlenségi nyomaték</div>
+<div class="idx"><b>06</b>A. Radioaktív bomlás – tanári feladat</div>
+<div class="idx"><b>07</b>B. Barométer – eredeti 6. feladat</div>
+<div class="idx"><b>08</b>C. Baba – két külön regressziós szakasz</div>
+<div class="idx"><b>09</b>D. Általános egyenes, saját papírvariáns</div>
+<div class="idx"><b>10</b>E. Nemlinearitás linearizálásának gyors menete</div>
+<div class="idx"><b>11</b>A. Rezgő rakomány – eredeti 3. feladat</div>
+<div class="idx"><b>12</b>B. Sziklafal – eredeti 4. feladat</div>
+<div class="idx"><b>13</b>C. Tengeralattjáró – valódi korábbi vizsgafeladat</div>
+<div class="idx"><b>14</b>D. Periodicitás autokorrelációval – napfoltok és szintetikus rezgés</div>
+<div class="idx"><b>15</b>E. Nemstacionárius jel és simítás</div>
+<div class="idx"><b>16</b>A. Fuvola – 5. feladat</div>
+<div class="idx"><b>17</b>B. Motorhang – 5. konzultációs példa</div>
+<div class="idx"><b>18</b>C. Gitár – 5. konzultációs WAV</div>
+<div class="idx"><b>19</b>D. Egyenirányító – feladatok.pdf-ben szerepel, de nincs MAT</div>
+<div class="idx"><b>20</b>E. Autospektrum, keresztspektrum és koherencia</div>
+<div class="idx"><b>21</b>A. Villanymotor hatásfokmező – valós extra konzultáció</div>
+<div class="idx"><b>22</b>B. Mérőeszköz kalibrálás – saját kiterjesztés a 2026/27 tematikából</div>
+<div class="idx"><b>23</b>C. ADC és kvantálás – tematikai plusz</div>
+<div class="idx"><b>24</b>D. Poisson, Gauss, uniform – eredeti elméleti listából</div>
+<div class="idx"><b>25</b>E. Monte Carlo – saját numerikus kontroll</div>
+<div class="idx"><b>26</b>F. Bayes, Maximum Likelihood, statisztikai teszt – tematikai plusz</div></div>
+<div class="page-footer-note">A kiadvány nem az egyetem hivatalos vizsgadokumentuma. A naprakész vizsgarendet külön kell ellenőrizni.</div></section>
+<section class="topic"><div class="topic-number">01 / 26</div><h2>A. Téglatest, 100 darab – eredeti feladat1</h2><div class="markdown"><p><strong>Feladat:</strong> 100 gyártott alkatrész a,b,c élét és m tömegét mérték. Volt-e durva hiba? Mennyi az élhosszak, tömegek és sűrűség szórása?</p>
+<p><strong>0. lépés:</strong> Betöltés után a,b,c oszlopvektorok, az m sorvektor. A MATLAB-ba mindet oszloppá alakítom: a(:),b(:),c(:),m(:). Egy sort egy gyártott darabnak értelmezek.</p>
+<p><strong>1. lépés:</strong> X=[a,b,c,m]. Minden oszlop átlagát és std szórását kiszámolom; abs(x−mean)&gt;3*std alapján javasolt sorok kiválasztása, és az elvetés után ismét ellenőrzés. Az eredeti adatokon saját iteratív 3σ módszerrel a 12.,23.,56.,91. sor kerül megjelölésre; 96 sor marad. Más szűrési szabálynál eltérés lehet, ezt dokumentálom.</p>
+<p><strong>2. lépés:</strong> Tisztított átlagok kb. a=1.20121, b=1.79852, c=5.00060, m=13.07879. A korrigált mintaszórás a gyártott alkatrészek <strong>egyedi variabilitását</strong> írja le; az átlag standard hibája SEM=s/√96.</p>
+<p><strong>3. lépés:</strong> V=abc, rho=m/(abc). Deriváltak:</p>
+<ul>
+<li>∂rho/∂a=−rho/a</li>
+<li>∂rho/∂b=−rho/b</li>
+<li>∂rho/∂c=−rho/c</li>
+<li>∂rho/∂m=1/(abc)</li>
+</ul>
+<p><strong>4. lépés:</strong> Az adatok ugyanazokat a fizikai darabokat reprezentálják, így J*cov(X)<em>J' becsli az egyedi sűrűségváltozékonyságot, J</em>(cov(X)/n)*J' pedig az átlagokra épülő becslés standard varianciáját, független darabok mellett.</p>
+<p><strong>Kontroll:</strong> rho≈1.21063 [forrás-egységekből]. A PDF nem ad egyértelmű SI egységet, ezért nem írok rá önkényesen kg/m³-t. A saját script: 01_teglatest.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">02 / 26</div><h2>B. Egyenes körkúp, 100 darab – eredeti feladat2</h2><div class="markdown"><p><strong>Feladat:</strong> 100 kúp M magassága és d alapkör-átmérője [mm]; anyagsűrűség 4432 kg/m³. Tömeg és bizonytalanság.</p>
+<p><strong>0. lépés:</strong> M és d vektorok. Azonos sorok ugyanazon kúphoz tartoznak.</p>
+<p><strong>1. lépés:</strong> Durvahiba-szűrés minden inputra, majd új statisztika. A saját iteratív 3σ vizsgálat 94 mintát tart meg; átlagok M≈8.50478 mm, d≈5.59077 mm.</p>
+<p><strong>2. lépés:</strong> SI: M_m=M_mm/1000, d_m=d_mm/1000. V=πd²M/12, tömeg m=ρV. A térfogat deriváltjai SI hosszmennyiségekre: ∂V/∂M=πd²/12, ∂V/∂d=πdM/6.</p>
+<p><strong>3. lépés:</strong> Ha rho pontos, u_m²=ρ²(u_V²). Ha az inputok összefüggenek: a két derivált és teljes 2×2 kovariancia kell. Ha rho bizonytalan: +(V*u_rho)² és szükség esetén kovarianciák.</p>
+<p><strong>Kontroll:</strong> m≈0.00030844 kg = 0.30844 g. Ez reális egy nagyon kis kúphoz. Script: 02_korkup.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">03 / 26</div><h2>C. Forgási ellipszoid, 90 darab – valódi vizsgaminta</h2><div class="markdown"><p><strong>Feladat:</strong> a három megadott adat A,B,C teljes átmérő, mind mm, tömeg m g. A testet márványként írja le a feladat.</p>
+<p><strong>1. lépés:</strong> Ne téveszd össze a féltengelyeket és átmérőket: V=4πabc/3 = πABC/6, mert a=A/2, stb.</p>
+<p><strong>2. lépés:</strong> Szűrés és szórás. A saját 3σ ellenőrzés szerint 87 minta marad, 21,27,90 index megjelölésével. Átlagok A≈26.00184, B≈41.69379, C≈82.89540 mm, m≈1017.794 g.</p>
+<p><strong>3. lépés:</strong> V [mm³], rho=m/V [g/mm³], aztán szorozzuk 10⁶-tal, ha kg/m³ kell. Jρ=[−ρ/A,−ρ/B,−ρ/C,1/V]. A megfelelő Cov-ról dokumentálom, hogy egyedi vagy átlagra vonatkozik.</p>
+<p><strong>Kontroll:</strong> rho≈21630 kg/m³. Ez márványhoz irreális, <strong>de ezt adják a mért adatok</strong>. Itt a vizsgán nem találok ki új tömeget vagy új átmérőt: szakmai ellenőrzésként leírom az ellentmondást. Script: 07_szferoid.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">04 / 26</div><h2>D. Csapágygolyó – csak szöveges feladat, az adat nem volt mellékelve</h2><div class="markdown"><p><strong>Feladat:</strong> 100 gömb d átmérőjét mérik, és kérik V átlagát, szórását és durvahiba-ellenőrzést.</p>
+<p><strong>Képlet:</strong> V=πd³/6, derivált πd²/2.
+Példa: d=10.0±0.1 mm → V=523.599 mm³, u(V)≈15.708 mm³.</p>
+<p><strong>Kód:</strong> 15_csapagygolyo.m tényleges adatra, demo_13_csapagygolyo_szintetikus.m saját véletlen tesztadatra. Az eredeti csapagygolyo_atmero.mat a forráscsomagban nem volt jelen; nincs kitalált tanári kimenet.</p>
+</div></section>
+<section class="topic"><div class="topic-number">05 / 26</div><h2>E. Csődarab – valós feladat, méretek + tehetetlenségi nyomaték</h2><div class="markdown"><p><strong>Feladat:</strong> D külső, d belső átmérő, h hossz; rho sűrűség. 2000 méret és 25 sűrűség mérés.</p>
+<p><strong>Képletek:</strong></p>
+<ul>
+<li>tömeg = ρπh(D²−d²)/4</li>
+<li>Iz = ρπh(D⁴−d⁴)/32</li>
+<li>Ix = ρπh(D⁴−d⁴)/64 + ρπh³(D²−d²)/48</li>
+</ul>
+<p><strong>Nem elég</strong> egyetlen eredményszám: minden kimenetre négy részderivált, és u²=J·Cov·J'! A méretadatokat mm→m váltom, a rho kg/m³ marad.</p>
+<p><strong>4σ csapda:</strong> az oktatói PDF 2000 mintára a 4σ küszöböt választja, a saját ellenőrzésünk egy méretadatnál ≈4.0026 eltérést talál. Ez kerekítési/küszöb-határhelyzet, a tanár a teljes méretmintát elfogadhatónak írja le; ezért az elvetést <strong>nem kezelem megdönthetetlen bizonyítéknak</strong>.</p>
+<p><strong>Tanári referencia:</strong> m≈0.94±0.01 kg; Ix≈(9.85±0.14)·10⁻⁴ kg·m²; Iz≈(4.01±0.06)·10⁻⁴ kg·m². Script: 10_cso.m.</p>
+<h2>Minden geometriás feladat végén ellenőrzöm</h2>
+<p>Helyes mértékegység? Átmérő/sugár? Képlet dimenziója? Az inputszórás egyedi vagy SEM? Korrelált input? Durva hiba megindokolva és újraellenőrizve? Ábra és komment megvan?</p>
+</div></section>
+<section class="topic"><div class="topic-number">06 / 26</div><h2>A. Radioaktív bomlás – tanári feladat</h2><div class="markdown"><p><strong>Kérdés:</strong> preparátum felezési ideje és szórása, valamint kezdeti aktivitása.</p>
+<p><strong>1. Grafikon:</strong> t vs A, csökkenő görbe; nem-negatív aktivitás ellenőrzése. <strong>2. Linearizálás:</strong> A=A0 e^(−ln2*t/T), ezért ln A=ln A0−(ln2/T)t. Átalakítás: Y=ln A, X=t. Illesztés: Y=mt+b.</p>
+<p><strong>3. Paraméterek:</strong> m=−ln2/T, b=ln A0. A fitline_ols az OLS-t és a becsült paraméter-kovarianciát adja. Nem elég pusztán polyfit: kell u_m és u_b.</p>
+<p><strong>4. Visszafejtés:</strong> T=−ln2/m, A0=e^b. Hibaterjedés: u_T=ln2/m²·u_m; u_A0=A0·u_b. A mért A pontos előjelei ellenőrzendők.</p>
+<p><strong>5. Tanári referencia:</strong> m≈−9.7631·10⁻⁵ s⁻¹, u_m≈5.9879·10⁻⁷ s⁻¹, b≈11.1676, u_b≈0.0125; T≈7099.6±43 s, A0≈70801±882 Bq.</p>
+<p><strong>Miért lehet eltérés?</strong> A logaritmizálás a hibamodellel együtt változik; nagy relatív zaj esetén az eredeti fizikai modellhez súlyozás vagy nemlineáris illesztés lehet indokolt, de a tanári feladat a log-linearizálásra épül.</p>
+<p><strong>MATLAB:</strong> 09_radioaktiv.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">07 / 26</div><h2>B. Barométer – eredeti 6. feladat</h2><div class="markdown"><p><strong>Kérdés:</strong> p0 tengerszinti nyomás, rho0 levegősűrűség és bizonytalanság.</p>
+<p>p(h)=p0 exp[−rho0 g h/p0].
+<strong>1.</strong> A mért p pozitív kell legyen loghoz. A forrásban 51 p adatból 48.,49.,51. nem pozitív – ezt fel kell tüntetni és <strong>logaritmizálás előtt</strong> kezelni.
+<strong>2.</strong> ln p=b+mh, ahol b=ln p0 és m=−rho0*g/p0.
+<strong>3.</strong> OLS: [m,b] és kovarianciamátrix.
+<strong>4.</strong> Vissza: p0=e^b; rho0=−m e^b/g.
+<strong>5.</strong> A rho0 deriváltjai m és b szerint: [−p0/g, rho0]. u²(rho0)=J Cov(m,b) Jᵀ; a paraméterek kovarianciáját is megtartom.</p>
+<p><strong>Ellenőrző forrásadat-becslés:</strong> csak pozitív p-kre m≈−0.01231035, b≈6.86883, p0≈961.83. Tanári megjegyzés: az adatsor egységei nem hiteles SI-egységek. Ezért a ρ0 számot <strong>nem</strong> nyomtatom magyarázat nélkül „kg/m³” felirattal. Az eredeti feladatszöveg g=9.806 m/s² értéket használ.</p>
+<p><strong>MATLAB:</strong> 06_barometer.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">08 / 26</div><h2>C. Baba – két külön regressziós szakasz</h2><div class="markdown"><p><strong>Kérdés:</strong> heti gyarapodás anyatejjel és tápszerrel, valamint a váltás ideje.</p>
+<p><strong>1. Időtengely:</strong> 54 mérés 12 óránként: t=0,0.5,...,26.5 nap. A forrásban eleinte csökken a súly, ez nem releváns a két lineáris gyarapodási modellhez. A tanári 2026-os mintamegoldás 13.,41.,49. adatot durva hibának tekinti, majd az első 6 mérést kihagyja.</p>
+<p><strong>2. Szegmensek:</strong> a fennmaradt adatsoron anyatejes rész 1:23, tápszeres rész 25:end, 24. átmeneti minta kimarad. Külön egyenes y1=m1 t+b1, y2=m2 t+b2.</p>
+<p><strong>3. Heti eredmények:</strong> 7m1, 7m2 [g/hét], bizonytalansága 7u(m1), 7u(m2). Ez azért 7, mert a meredekség g/nap egységű.</p>
+<p><strong>4. Metszéspont:</strong> t*=(b2−b1)/(m1−m2). Ha m1≈m2, az átállási idő instabillá válik! A két független illesztés m/b kovarianciájából az elsőrendű hibaterjedés számolható.</p>
+<p><strong>A forrásra épülő numerikus kontroll:</strong> 1. meredekség ≈57.2165 g/nap → 400.52±6.88 g/hét; 2. meredekség ≈32.9701 g/nap → 230.79±2.95 g/hét; átváltás ≈14.80 napos korban. Ezek a tanári szegmensválasztással számított értékek. A váltási idő további modell-/szegmensbizonytalanságát ne keverd a puszta regressziós standard hibába.</p>
+<p><strong>MATLAB:</strong> 08_baba.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">09 / 26</div><h2>D. Általános egyenes, saját papírvariáns</h2><div class="markdown"><p>x=[0,1,2], y=[1,3,5].
+Átlagok x̄=1, ȳ=3. Meredekség: Σ(x−x̄)(y−ȳ)/Σ(x−x̄)²=(2+0+2)/(1+0+1)=2. b=ȳ−mx̄=1. A reziduum 0, mert pontosan egyenes.</p>
+</div></section>
+<section class="topic"><div class="topic-number">10 / 26</div><h2>E. Nemlinearitás linearizálásának gyors menete</h2><div class="markdown"><ul>
+<li>Exponenciális: y=Ae^(kx) → ln y=ln A+kx, A=e^b.</li>
+<li>Hatvány: y=A x^p → ln y=ln A+p ln x, csak pozitív x,y.</li>
+<li>Inverz: y=1/(A+Bx) → 1/y=A+Bx, kizárva y=0.</li>
+<li>Fordított: y=A/x+B → y=A·(1/x)+B, kizárva x=0.</li>
+</ul>
+<p><strong>Vizsgasorrend:</strong> mérés-grafikon → adatellenőrzés → fizikai képlet → linearizálás → OLS → paraméterek és kovariancia → visszafejtés → hibaterjedés → eredeti skálán kontrollábra.</p>
+</div></section>
+<section class="topic"><div class="topic-number">11 / 26</div><h2>A. Rezgő rakomány – eredeti 3. feladat</h2><div class="markdown"><p><strong>Forrás:</strong> rezges5.mat / jel, 491 minta; a tanári szöveg szerint 0.1 s időköz, vagyis fs=10 Hz.</p>
+<p><strong>Mit keresek?</strong> Harmonikus kitérés periódusidejét T és amplitúdóját A, először szemrevételezve és SG-szűréssel, aztán FFT-vel.</p>
+<p><strong>1. Időtengely:</strong> t=(0:490)/10. Időtartam ~49.1 s, Nyquist=5 Hz, Δf=10/491≈0.02037 Hz.
+<strong>2. Nyerstábla:</strong> plot(t,jel). Látom, hogy sok a zaj, ezért óvatos detrend/SG használható.
+<strong>3. SG:</strong> 11 pontos ablak, 3. fok; lokálisan 3. fokú polinomot illeszt és a középpontban becsül. Ha 30 pontos ablakot próbálnék, a rövid csúcsokat eltüntethetném.
+<strong>4. Időtartományos T:</strong> a helyesen paraméterezett csúcsok közti idők mediánja. Ha a megtalált csúcsok 0.1 s távolságra vannak, nyilván zajt találtam, nem a valódi periódust.
+<strong>5. Időtartományos A:</strong> egy ciklus max/min különbségének fele, több cikluson medián/átlag. A jel DC/trend értékét ne tekintsem amplitúdónak.
+<strong>6. FFT:</strong> [f,A]=one_sided_fft(jel,10), DC kivételével legnagyobb fizikai spektrális csúcs. A valós adaton a nyers detrendelt FFT egyik domináns binje ~0.4481 Hz. Periódus ~2.232 s. A bin-csúcs amplitúdója spektrális szivárgás miatt nem feltétlenül a pontos fizikai amplitúdó.
+<strong>7. Kontroll:</strong> a két módszer frekvenciájának nagyságrendileg egyeznie kell; a felbontás, ablak és zaj számít.
+Script: 03_rezges.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">12 / 26</div><h2>B. Sziklafal – eredeti 4. feladat</h2><div class="markdown"><p><strong>Forrás:</strong> hang_jelek.mat, jel_1/jel_2/time, fs=1000 Hz, hangsebesség v=340 m/s. Egy hangimpulzus kimegy, visszaverődik, és visszaér.</p>
+<p><strong>1.</strong> Mindkét nyers jelt ugyanazon időtengelyen és külön ábrán ellenőrzöm. <strong>2.</strong> A közép/trend levonása indokolható. <strong>3.</strong> Keresztkorreláció: a tanári tanács szerint a korrelációs görbe simítása segíthet. <strong>4.</strong> A CCF különböző lokális csúcsait és előjelét is megnézem. <strong>5.</strong> A késés |lag|/1000 másodperc. A távolság <strong>d=340·|lag|/(2·1000)</strong> méter. <strong>6.</strong> A csúcspozíció bizonytalanságát (mintában) fizikai indokkal adom meg, és d-re propagálom.</p>
+<p><strong>Fontos buktató a konkrét adaton:</strong> a naiv abszolút simított CCF-maximum az egyik automatikus kiértékelésben |lag|≈1053 mintánál jelentkezett, d≈179.01 m. Van közeli, eltérő előjelű jelentős csúcs is; emiatt a <strong>szemrevételezés és jelfizikai értelmezés kötelező</strong>, nem tekintjük az automatikus absmax-ot hiteles igazságnak. A saját echo_peak_candidates.m több lehetséges csúcsot ad ki.</p>
+</div></section>
+<section class="topic"><div class="topic-number">13 / 26</div><h2>C. Tengeralattjáró – valódi korábbi vizsgafeladat</h2><div class="markdown"><p><strong>Forrás:</strong> hang_jelek1.mat; fs=22000 Hz; a vízbeli hangsebesség 1500 m/s.
+A tanári megoldás jel_1 és jel_2 között számolt keresztkorrelációt, majd 81 mintán simított korrelációt mutat.</p>
+<p><strong>1.</strong> N=50000 mindkét csatornán, Δt=1/22000 s.
+<strong>2.</strong> Detrend mindkét jelre.
+<strong>3.</strong> FFT-alapú CCF a teljes késésrácsra, a simítóablak 81 (a tanári kóddal egyezik).
+<strong>4.</strong> A legjelentősebb hasznos esemény |lag|≈38012 minta körül van; Δt≈1.728 s.
+<strong>5.</strong> Oda-vissza: d=(1500×38012)/(2×22000)≈1295.86 m.
+<strong>6.</strong> A tanári PDF kommentje szerint (1296±10) m. Ez az ábráról becsült jelenségtartomány; ha standard bizonytalanságot kérnek, a választott modell alapján külön számolni kell.</p>
+<p><strong>Miért FFT-alapú korreláció?</strong> A naiv kétszeres ciklusos implementáció nagy N-re drága; a diszkrét konvolúció FFT-vel O(N log N), de a sorrendet és a nulla-késés indexét gondosan kell kezelni. Script: 11_szonar.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">14 / 26</div><h2>D. Periodicitás autokorrelációval – napfoltok és szintetikus rezgés</h2><div class="markdown"><p>Az ACF a jel és eltolt önmaga hasonlóságát méri. Lag=0 nem a keresett periódusidő, hanem triviális ön-egyezés. Periodikus jel esetén a <strong>következő pozitív késésű maximumok</strong> közötti távolság közel T.
+A tanári havi_napfolt.csv adathoz a 4. oszlop tartozik, a saját oktatói script 1900-tól kezdi. Napfoltciklushoz több évnyi megfigyelés és széles ACF-késés ablak kell.
+Scriptek: 18_napfolt_acf.m, demo_17_acf_periodus.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">15 / 26</div><h2>E. Nemstacionárius jel és simítás</h2><div class="markdown"><p>A nemstacionárius jel statisztikai jellemzői időfüggők. Ha lassú trend ráül a hasznos jelre, a korrelációs függvény az eredeti és a detrendelt adatokon nagyon eltérhet.
+A tanári non_stat_signal.mat a 4. konzultációval érkezik, a saját 19_nemstacionarius_demo.m az eredeti fájlt használja, ha jelen van, különben <strong>SZINTETIKUS</strong> jelzéssel saját mintát generál.</p>
+<h2>Visszhang vizsgaellenőrzés</h2>
+<p>Kettővel osztottam? Megfelelő fs? Lag=minta vagy másodperc? A jel-fizikai eseményt választottam, nem vakon a legnagyobb csúcsot? A bizonytalanságot standardnak vagy tartománynak nevezem? Ábrán látszik a keresett csúcs?</p>
+</div></section>
+<section class="topic"><div class="topic-number">16 / 26</div><h2>A. Fuvola – 5. feladat</h2><div class="markdown"><p><strong>Forrás:</strong> fuvola8.wav, saját fs értékkel a fájl fejlécében; ezt audioread adja, nem találgatjuk.</p>
+<p><strong>Kérdés a)</strong> spektrum, három leghangosabb hang frekvenciája. A teljes WAV-ra one_sided_fft; helyes Hz-tengely; lokális csúcsok zajszűréssel; frekvencia szerint feliratozás. Figyelmeztetés: három erős spektrális csúcs <strong>lehet egy hang alapfrekvenciája és felharmonikusai</strong>, nem biztosan három külön zenei hang. A hosszú felvétel különböző időszakaszaiban más hangok szerepelhetnek, ezért zenei hangok elkülönítéséhez időszakaszos spektrum szükséges.</p>
+<p><strong>Kérdés b)</strong> normált autokorreláció. Lags mintában, másodpercben lags/fs. ACF(0) triviálisan jellemzően 1; az első jelentős pozitív maximumból periodicitás becsülhető.</p>
+<p><strong>Kérdés c)</strong> a fejlécben tárolt fs, Nyquist=fs/2, elméleti legmagasabb visszaállítható frekvencia a Nyquist-korlátnál. A valós anti-alias szűrés és tökéletes sávkorlátozás feltételeit említeni kell.</p>
+<p><strong>MATLAB:</strong> 05_fuvola.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">17 / 26</div><h2>B. Motorhang – 5. konzultációs példa</h2><div class="markdown"><p><strong>Forrás:</strong> motorhang.mat, változók original, used és Fs; ellenőrzött fájladat: Fs=11025 Hz, 20001 minta csatornánként.</p>
+<p><strong>Menet:</strong> külön időgrafikon, DC-levonás, egyoldali FFT; ugyanazon f-tengelyen az eredeti és használt motor spektruma, valamint különbsége. 11025/2=5512.5 Hz a Nyquist. N=20001 mellett Δf≈0.5512 Hz.</p>
+<p><strong>Értelmezés:</strong> ha egy adott sávban erősebb harmonikus van a használt motornál, a működési állapotról következtethetünk, de ez önmagában nem oksági bizonyíték hibára. <strong>MATLAB:</strong> 12_motorhang.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">18 / 26</div><h2>C. Gitár – 5. konzultációs WAV</h2><div class="markdown"><p>Hangból WAV import, szükség esetén több csatorna mono átlaga, DC-levonás, FFT, harmonikusok. Az alapfrekvencia <strong>nem feltétlen a legnagyobb FFT-bin</strong>, mert felharmonikus lehet hangosabb.
+A saját 13_gitar.m legnagyobb pozitív csúcsot jelöl meg, de ezt nem állítja automatikusan alapfrekvenciának.</p>
+</div></section>
+<section class="topic"><div class="topic-number">19 / 26</div><h2>D. Egyenirányító – feladatok.pdf-ben szerepel, de nincs MAT</h2><div class="markdown"><p><strong>Kérdés:</strong> átlagos egyenfeszültség és annak mérési pontossága, valamint periodikus összetevők frekvenciája.</p>
+<p><strong>Menet:</strong> N és fs beolvasása; mean(x) a DC-becslés; a std(x)/√N csak független mérési hibák esetén korrekt közép-SEM. Ha determinisztikus periodikus hullámosság is van, blokkátlagolással vagy időablakmodellel külön becslés indokolt. A hullámosságot x−mean(x) FFT-je tárja fel.</p>
+<p><strong>Saját NEM tanári demó:</strong> fs=2000 Hz, VDC=5 V, 100 Hz hullámosság 0.35 V, 200 Hz komponens 0.12 V és 0.025 V szórású fehér zaj. Megfelelő kódnál 5 V DC és 100/200 Hz körüli csúcsok látszanak. <strong>MATLAB:</strong> 16_egyeniranyito_szimulacio.m. Ez nem az eredeti MAT-fájl, amire az oktatói feladat hivatkozik.</p>
+</div></section>
+<section class="topic"><div class="topic-number">20 / 26</div><h2>E. Autospektrum, keresztspektrum és koherencia</h2><div class="markdown"><p>PSD ≠ amplitúdóspektrum: a PSD értéke jel²/Hz. Welch: az idősorokat átlapolt szegmensekre bontjuk, ablakoljuk, a periodogramokat átlagoljuk. Keresztspektrum Pxy és autospektrumok Pxx,Pyy alapján a magnitúdó-négyzetes koherencia Cxy=|Pxy|²/(Pxx·Pyy). 0–1 közötti érték becsülhető (átlagolás után); egyetlen nyers FFT-ből kapott koherencia félrevezető lehet.</p>
+<p><strong>MATLAB:</strong> demo_05_fft_korrelacio.m és spectra_welch_local.m. Második kontroll: demo_07_spektralis_szivargas.m, demo_14_aliasing.m.</p>
+<h2>Tipikus hibák</h2>
+<p>Hibás fs; Hz helyett mintaindex a tengelyen; 2x normálás DC-n; T=fs/N keverése Δf=fs/N-nel; hang és harmonikus összekeverése; ablakolás utáni amplitúdó-korrekció kihagyása; PSD egységének rossz leírása.</p>
+</div></section>
+<section class="topic"><div class="topic-number">21 / 26</div><h2>A. Villanymotor hatásfokmező – valós extra konzultáció</h2><div class="markdown"><p><strong>Forrásadat:</strong> villanymotor.mat, 9988×3 adatokmotor. Oszlopok: fordulatszám [rpm], nyomaték [Nm], hatásfok [-].
+Az azonos fordulatszám-nyomaték kombinációhoz több mért hatásfok tartozhat.</p>
+<p><strong>1.</strong> Betöltöm, ellenőrzöm: N×3, véges, értelmes hatásfok.
+<strong>2.</strong> Egyedi (rpm, Nm) párokat kiválasztok.
+<strong>3.</strong> Az ismétlődő párok hatásfokainak <em>mediánja</em> kerül a csoporthoz. Nem véletlenül medián: ellenállóbb szélső pontokra.
+<strong>4.</strong> A tanári minta a csoportosított adat utolsó 4 sorát befejezetlen mérésként kihagyja. Ezt ebben az adatfájlban is feltüntetem, de más forrásnál nem automatikus.
+<strong>5.</strong> Az azonos rpm csoporton belül nyomaték szerint rendezve helyi mozgóátlaggal finoman simítható a hatásfok.
+<strong>6.</strong> Minden fordulatszámhoz a maximális hatásfok sorát választom, megtartva az ahhoz tartozó nyomatékot. <strong>Nem globális egyetlen maximumot adok minden fordulathoz!</strong>
+<strong>7.</strong> 3D fordulat–nyomaték–hatásfok ábra és külön 2D optimális hatásfok-görbe.</p>
+<p><strong>Script:</strong> 20_villanymotor_hatasfok.m. Alapfüggvények: group_median_pairs.m, max_per_first_column.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">22 / 26</div><h2>B. Mérőeszköz kalibrálás – saját kiterjesztés a 2026/27 tematikából</h2><div class="markdown"><p>Mért műszerjel y=m·x+b, ahol x hiteles referenciaérték. <strong>Kalibráció</strong>: az eszköz meredekség/offset paramétereinek meghatározása.</p>
+<p>Súlyozott illesztés eltérő abszolút mérési bizonytalanságokkal: W=diag(1/u_i²), β=(XᵀWX)⁻¹ XᵀWy; Covβ=(XᵀWX)⁻¹. Ha y kijelzésből x-et szeretnék becsülni: x=(y−b)/m, a fizikai inverz korrekció paraméterhibája a teljes (m,b) kovarianciával propagálódik.</p>
+<p><strong>Script:</strong> demo_15_sulyozott_kalibracio.m és 21_ket_szenzor_kalibracio.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">23 / 26</div><h2>C. ADC és kvantálás – tematikai plusz</h2><div class="markdown"><p>Ideális B bites, 5 V teljes tartományú ADC-nél Δ=5/2^B V. B=8: Δ=0.01953125 V, és ha a kvantálási hiba egyenletes [-Δ/2,Δ/2] modellen írható le, u=Δ/√12≈0.005638 V.
+<strong>Miért feltételes?</strong> Valódi ADC lehet nemlineáris, offsetes, zajos, a kvantálási hiba pedig korrelálhat a jellel. A kvantálás és a mintavétel külön jelenség.</p>
+<p><strong>Script:</strong> demo_09_adc_kvantalas.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">24 / 26</div><h2>D. Poisson, Gauss, uniform – eredeti elméleti listából</h2><div class="markdown"><ul>
+<li>Poisson λ=4: P(X=2)=e⁻⁴4²/2!≈0.146525, E=4, s=2.</li>
+<li>Egyenletes [-0.05,+0.05] mm: szórás (0.10)/√12≈0.0288675 mm.</li>
+<li>Standard normál eloszlásban P(−2≤Z≤2)≈95.45%.</li>
+<li>Centrális határeloszlás: az összeg/átlag standardizált eloszlása, nem feltétlen a nyers adat, közelít Gauss-alakhoz.</li>
+</ul>
+<p><strong>Scriptek:</strong> 22_egyenletes_es_poisson_feladat.m, demo_08_egyenletes_gauss_clt.m, demo_11_poisisson.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">25 / 26</div><h2>E. Monte Carlo – saját numerikus kontroll</h2><div class="markdown"><p>Ha f(x) nemlineáris, a Jacobian-alapú u megközelítés mellett generálok véletlen inputokat az ismert eloszlásukból, kimenet = f(x) minden mintán, végül std(y) és eloszlás. Nem helyettesíti a helyes bemeneti bizonytalanság-modellt.
+<strong>Script:</strong> demo_19_jacobian_vs_montecarlo.m.</p>
+</div></section>
+<section class="topic"><div class="topic-number">26 / 26</div><h2>F. Bayes, Maximum Likelihood, statisztikai teszt – tematikai plusz</h2><div class="markdown"><p>MLE: az a paraméter, amelynek likelihoodja a megfigyelt mintán maximális. Normális hibamodellű, azonos varianciájú adatoknál a várható érték MLE-je a mintaátlag.
+Bayes normál prior esetén a posterior a prior és likelihood pontosság-súlyozott kombinációja. Egymintás próba: H0:μ=μ0, p-érték nem az a valószínűség, hogy H0 igaz.
+<strong>Scriptek:</strong> demo_20_bayes_mle.m és demo_21_hipotezis_z.m. Ezek a 2026/27-es tantárgytematikából készült saját gyakorlatok, nem igazolt korábbi MATLAB-vizsgafeladatok.</p>
+<h2>Vizsgaszabály</h2>
+<p>Ha nem tudok egy számot megindokolni, akkor a kód önmagában nem megoldás. Mértékegység, fizikai modell, bemeneti adattisztítás, bizonytalanság és ábrás kontroll mindig legyen.</p>
+</div></section>
+</body></html>
