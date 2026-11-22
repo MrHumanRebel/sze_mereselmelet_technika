@@ -9,6 +9,7 @@ A tárgy elméleti tételei, számolási feladatai és MATLAB-megoldásai egy he
 | Anyag | Tartalom |
 |---|---|
 | [Elméleti jegyzet – PDF és HTML](kiadvany/) | 16 vizsgatétel, képletek, számpéldák, összefoglalók |
+| [Képletlap – PDF](kiadvany/Mereselmelet_es_technika_GKLM_FKTM013_Kepletlap.pdf) | Nyomtatható összefüggésgyűjtemény |
 | [1–6. tétel](elmelet/01_06_meres_es_eloszlasok.md) | Mérési alapok, bizonytalanság, eloszlások |
 | [7–12. tétel](elmelet/07_12_statisztika_regresszio.md) | Becslés, hibaterjedés, regresszió |
 | [13–16. tétel](elmelet/13_16_idojel_fft.md) | Időjelek, simítás, FFT, spektrumok |
@@ -32,7 +33,7 @@ run('demo_01_statisztika.m')
 run('peldatar/09_radioaktiv.m')
 \`\`\`
 
-A forrásadatos példákhoz az eredeti MAT/WAV fájlok szükségesek. Az adatok változóneveit és az adott feladat mérési egységeit a \`matlab/peldatar/README.md\` tartalmazza. A tesztfuttatások a GitHub [Actions](../../actions) alatt is követhetők.
+Néhány eredeti MAT fájl már benne van a repóban a [matlab/adatok](matlab/adatok/) mappában (baba, barométer, kúp, szferoid). A további forrásadatos példákhoz az eredeti MAT/WAV állományok szükségesek. Az adatok változóneveit és az adott feladat mérési egységeit a \`matlab/peldatar/README.md\` tartalmazza. A tesztfuttatások a GitHub [Actions](../../actions) alatt is követhetők.
 
 ## Vizsga
 
