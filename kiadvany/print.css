@@ -44,3 +44,5 @@ body{margin:0;background:white}a{color:#006ed8;text-decoration:none}
 .toplink{font-size:9pt;color:#6f7b89}
 .page-footer-note{margin-top:13mm;color:#8a94a1;font-size:8.5pt}
 @media screen{body{background:#f2f4f8}.cover,.index,.topic{width:210mm;min-height:297mm;background:white;margin:20px auto;padding-left:21mm;padding-right:21mm;box-shadow:0 5px 20px #c4cad333}}
+
+/* A generált PDF és HTML a main ágon verziózott kiadvány. */
