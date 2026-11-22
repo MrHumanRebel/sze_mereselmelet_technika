@@ -1,7 +1,8 @@
-% Méréselmélet és technika: indítás.
-% Futtasd a matlab mappában, vagy bárhonnan: run('abszolut/ut/matlab/setup.m')
+% MATLAB munkakörnyezet az egész repóhoz.
+% A MATLAB Current Folder legyen a repo matlab könyvtára.
 root = fileparts(mfilename('fullpath'));
 addpath(root);
 addpath(fullfile(root,'common'));
 addpath(fullfile(root,'peldatar'));
-fprintf('Méréselmélet MATLAB útvonalak beállítva: %s\n', root);
+addpath(fullfile(root,'adatok')); % a megosztott eredeti MAT/WAV források
+fprintf('Méréselmélet: útvonalak beállítva. Gyökér: %s\n',root);
