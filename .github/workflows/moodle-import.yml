@@ -70,9 +70,10 @@ jobs:
               verified+=1
           if verified!=178 or excluded!=1:
               raise SystemExit(f'Manifest mismatch: {verified} verified, {excluded} excluded')
-          inputs=list(Path('matlab/adatok').iterdir())
-          if len([p for p in inputs if p.is_file()])!=30:
-              raise SystemExit('Expected 30 canonical MATLAB input files')
+          inputs={p.name for p in Path('matlab/adatok').iterdir() if p.is_file() and p.name!='README.md'}
+          expected_inputs=set(manifest['matlab_data'])
+          if inputs!=expected_inputs:
+              raise SystemExit(f'Input mismatch: missing={sorted(expected_inputs-inputs)}, extra={sorted(inputs-expected_inputs)}')
           print(f'IMPORT VALIDATED: {verified} source files + 30 canonical datasets; 1 separately licensed manual excluded.')
           PY
       - name: Commit real files to main, remove transfer chunks
