@@ -1,59 +1,83 @@
-# 1–6. elméleti tétel – mérési alapok és eloszlások
-
-Az eredeti, 16 pontos tételsor sorrendjét követem. Minden tételhez van egy vizsgán leírható rövid válasz, aztán az a rész, amit valóban érteni kell.
+# Méréselmélet és -technika — 1–6. tétel
 
 ## 1. Mérés és mérési eljárások
 
-**Vizsgaválasz:** A mérés egy fizikai mennyiség értékének kísérleti meghatározása, mérési eljárással és mértékegységgel. Közvetlen mérésnél a keresett mennyiséget közvetlenül mérjük (pl. tolómérővel hossz). Közvetett mérésnél más, megmért mennyiségekből számítjuk (pl. sűrűség: ρ = m/V). A mérési lánc részei a mérendő objektum, érzékelő, jelkondicionálás, adatgyűjtés és kiértékelés. Kalibrálásnál az eszköz jelzését ismert etalonértékekhez viszonyítjuk. Mérés végeredménye nem puszta szám: érték, mértékegység és bizonytalanság együtt.
+Mérésnél egy fizikai mennyiség értékét határozom meg valamilyen eljárással. A végeredmény nem önmagában egy szám: kell hozzá a mértékegység és a bizonytalanság is.
 
-**Példa:** 10.00 ± 0.03 mm. A ± nem azt jelenti, hogy biztosan ennyi a hiba, hanem az alkalmazott bizonytalansági modell szerinti becslést és lefedési információt kell megadni.
+**Közvetlen mérésnél** magát a keresett mennyiséget mérem. Például egy hosszúságot tolómérővel. **Közvetett mérésnél** több mérési adatból számolok: a sűrűséghez megmérem a tömeget, a térfogatot pedig a geometriai méretekből kapom.
 
-**Ne keverd:** pontosság (valós értékhez közel) ≠ precizitás (ismételt eredmények szórása kicsi).
+A mérési lánc tipikus sorrendje: mérendő objektum → érzékelő → jelkondicionálás → adatgyűjtés → kiértékelés. A kalibrálás során a műszer jelzését ismert referenciaértékekhez hasonlítom. A kalibrálás nem feltétlenül azonos a műszer beállításával.
+
+> **Alapképlet:** ρ = m/V
+
+**Számpélda:** m=48 g, V=24 cm³. A sűrűség ρ=2 g/cm³, vagyis 2000 kg/m³.
+
+**Amire figyelek:** pontosság és precizitás nem ugyanaz. A mérés lehet nagyon megismételhető, miközben rendszeresen eltér a referenciától.
+
+**MATLAB:** load, whos, plot, mean, std. A vizsgán először az inputot ellenőrzöm, nem azonnal illesztek.
 
 ## 2. Mértékegységrendszerek, SI
 
-**Vizsgaválasz:** Az SI a nemzetközi mértékegységrendszer. A hét alapegység: méter (m), kilogramm (kg), másodperc (s), amper (A), kelvin (K), mól (mol), kandela (cd). Származtatott egységek például sebesség (m/s), erő: newton (N = kg·m/s²), nyomás: pascal (Pa = N/m²), energia: joule (J = N·m). A dimenzióanalízis ellenőrzi, hogy egy képlet mindkét oldalának ugyanaz a mértékegysége.
+Az SI alapegységei: **méter (m), kilogramm (kg), másodperc (s), amper (A), kelvin (K), mól (mol), kandela (cd)**. Ezekből származtatott mennyiségek adódnak: N=kg·m/s², Pa=N/m², J=N·m.
 
-**Példa:** 5 mm = 0.005 m; 1 cm³ = 10⁻⁶ m³; 1 g/cm³ = 1000 kg/m³. A km/h → m/s átváltás: osztás 3.6-tal.
+Mértékegységet minden bemenetnél és minden számított eredménynél megadok. A dimenzióanalízis gyors ellenőrzés: egy helyes fizikai képlet két oldalának azonos dimenziójú kell lennie.
 
-**Tipikus bukó:** mm és m, g és kg összekeverése a sűrűségnél.
+> **Átváltás:** 1 mm = 10⁻³ m; 1 mm³ = 10⁻⁹ m³; 1 g/cm³ = 1000 kg/m³.
+
+**Számpélda:** a kúp magassága 8,5 mm, átmérője 5,6 mm. Ha a térfogatot m³-ben kérem, 0,0085 m és 0,0056 m kerül a képletbe. A hosszegység ezerszeres eltérése térfogatnál már milliárdszoros hibát okozhat.
+
+**Amire figyelek:** átmérő ≠ sugár; grammból kilogramm, milliméterből méter. A köbös átváltás különösen könnyen elcsúszik.
 
 ## 3. Mérési bizonytalanság és fajtái
 
-**Vizsgaválasz:** A mérési bizonytalanság a mérendő mennyiségnek tulajdonítható értékek szóródását jellemző nemnegatív paraméter. A hibát hagyományosan a mért érték és referenciaérték különbségének tekintjük, de az ismeretlen valódi hiba nem mérhető közvetlenül. Véletlen hatások az ismételt eredményeket szórják; rendszeres hatások eltolást okoznak; durva hibák hibás mérésből vagy adatkezelésből eredhetnek. A standard bizonytalanság u szórásjellegű. A-típusú becslés ismételt mérések statisztikájával, B-típusú más információból történik. Független komponensek összevonásánál: u_c = √(u₁² + u₂² + …). Kiterjesztett bizonytalanság: U = k·u_c; k≈2 gyakran közel 95%-os lefedettség normálmodellnél, de nem univerzális garancia.
+A **mérési hiba** a mért érték és egy referenciaérték különbsége. A **mérési bizonytalanság** a mérendő mennyiségnek tulajdonítható értékek szóródását jellemzi. Az utóbbit akkor is becsülni tudom, ha a valódi értéket nem ismerem pontosan.
 
-**Példa:** a műszer nullpontja hibás → szisztematikus eltolás; zavaró környezeti zaj → véletlen szórás; elgépelés, rosszul leolvasott kijelző → durva hiba.
+A véletlen hatások szóródást okoznak, a rendszeres hatások eltolást. Durva hiba lehet például elgépelés, rossz leolvasás vagy hibás eszközhasználat. A-típusú bizonytalanságot mérési adatsor statisztikájából, B-típusút más információból (kalibrálás, gyártói specifikáció) becsülök.
 
-**Tipikus bukó:** minden 3σ feletti adat automatikus törlése. A 3σ szűrés vizsgán hasznos heurisztika, nem matematikai bizonyíték. Nagy mintában valódi 3σ-n kívüli adatok természetesen is előfordulnak.
+**Standard bizonytalanság:** szórásjellegű u. **Kiterjesztett bizonytalanság:** U=k·uᶜ, ahol a k lefedési tényező. Normálmodell és megfelelő feltételek mellett k≈2 gyakran közel 95%-os lefedettséghez tartozik; nem általános garancia.
 
-## 4. Mérési eredmény mint valószínűségi változó
+> **Független komponensek:** uᶜ = √(u₁² + u₂² + ⋯).
 
-**Vizsgaválasz:** A mérést véletlen változóként modellezhetjük: X. Diszkrét változónál értékekhez valószínűségeket rendelünk, folytonos változónál sűrűségfüggvényt f(x). Eloszlásfüggvény: F(x) = P(X ≤ x); folytonosnál F(x) = ∫₋∞ˣ f(t)dt. Várható érték: E[X], szórásnégyzet: Var(X) = E[(X−E[X])²], szórás: σ = √Var(X). Két változó együttjárását kovariancia és korreláció jellemzi: ρ = Cov(X,Y)/(σXσY).
+**Számpélda:** u₁=0,3 mm és u₂=0,4 mm. Az összevont standard bizonytalanság √(0,09+0,16)=0,5 mm. k=2-vel U=1,0 mm.
 
-**Értsd:** a várható érték az elméleti eloszlás középértéke, a mintaátlag ennek a mért adatokból adott becslése.
+**Amire figyelek:** az „±0,1” után mindig leírom, hogy az standard szórás, standard bizonytalanság vagy kiterjesztett bizonytalanság.
 
-**Tipikus bukó:** a sűrűségfüggvény magasságát valószínűségnek nézni. Valószínűséget folytonos esetben területtel számolunk.
+## 4. A mérési eredmény mint valószínűségi változó
 
-## 5. Normál- (Gauss-) eloszlás és centrális határeloszlás-tétel
+Ha ugyanazt a mennyiséget újra és újra mérem, az eredmény változhat. Ezt **X véletlen változóként** modellezem. Diszkrét például az események száma, folytonos a mérőműszerrel meghatározott átmérő.
 
-**Vizsgaválasz:** X ~ N(μ, σ²), sűrűsége f(x) = [1/(σ√(2π))]·exp(−(x−μ)²/(2σ²)). Az eloszlás haranggörbe, szimmetrikus μ körül. Körülbelül 68.27% esik μ±σ, 95.45% μ±2σ, 99.73% μ±3σ közé. A centrális határeloszlás-tétel szerint független, azonos eloszlású, véges varianciájú minták megfelelően standardizált összege/átlaga a mintanagyság növekedtével normáleloszláshoz tart. Ezért sok kis hatás összege közel Gauss-jellegű; az átlag szórása csökken: σ/√n.
+Az eloszlásfüggvény F(x)=P(X≤x). Folytonos eloszlásnál a sűrűségfüggvény f(x), amelynek egy intervallum alatti területe adja az adott tartomány valószínűségét. Várható érték E[X]; variancia Var(X)=E[(X−E[X])²]; szórás σ=√Var(X).
 
-**Példa:** ha a mért mennyiség szórása 4 mm és n=16 független mérésünk van, a közép szórása 4/√16 = 1 mm.
+> **Alap:** F(x)=P(X≤x), σ²=E[(X−E[X])²].
 
-**Tipikus bukó:** a centrális tétel nem állítja, hogy az eredeti mérések eloszlása normális, és nem pótolja a függetlenséget.
+**Számpélda:** a 9, 10 és 11 mm értékek azonos valószínűségűek. E[X]=10 mm. A populáció varianciája (1+0+1)/3=2/3 mm².
+
+**Amire figyelek:** a sűrűségfüggvény magassága önmagában nem valószínűség. Folytonos változónál területet integrálok.
+
+## 5. Normáleloszlás és centrális határeloszlás
+
+A normál- vagy Gauss-eloszlás szimmetrikus haranggörbe. Két paramétere μ és σ. A minták nagyjából 68,27%-a van μ±σ, 95,45%-a μ±2σ és 99,73%-a μ±3σ között.
+
+A **centrális határeloszlás-tétel** nem azt mondja, hogy minden mérési adat normális. Feltételek mellett független, azonos eloszlású, véges varianciájú változók standardizált átlaga a mintaszám növekedtével normáleloszláshoz tart.
+
+> **Normál sűrűség:** f(x)=exp[−(x−μ)²/(2σ²)]/(σ√(2π)); **átlag szórása:** σ/√n.
+
+**Számpélda:** egy mérés szórása 4 mm. Ha 16 független mérést átlagolok, az átlag szórása 4/√16=1 mm.
+
+**Amire figyelek:** a 3σ-n kívüli adat nem automatikusan durva hiba. Nagy mintában normális modellből is várható néhány szélsőérték.
+
+**MATLAB:** demo_08_egyenletes_gauss_clt.m, demo_01_statisztika.m.
 
 ## 6. Poisson-eloszlás és jellemzői
 
-**Vizsgaválasz:** A Poisson-eloszlás független, ritka események adott idő-/téregységben előforduló darabszámát modellezi. P(X=k) = exp(−λ)·λ^k/k!, k=0,1,2,…, λ>0. Várható érték E[X]=λ; variancia Var(X)=λ; szórás σ=√λ. A folyamat megfelelő feltételeinél a külön időintervallumok esetszámai függetlenek, a várható eseményszám arányos az intervallum hosszával.
+Darabszámok modellje: például mennyi részecske érkezik egy perc alatt, vagy hány ritka esemény történik egy meghatározott időablakban. A Poisson-eloszlás diszkrét, k=0,1,2,… értékeket vesz fel.
 
-**Példa:** átlag 4 részecske/perc; annak valószínűsége, hogy egy percben pontosan 2 érkezik: exp(−4)·4²/2! ≈ 0.1465.
+Az eloszlás paramétere λ az adott intervallum várható eseményszáma. A várható érték és a variancia egyaránt λ, ezért a szórás √λ.
 
-**Ne keverd:** Poisson: darabszám, diszkrét. Normál: folytonos, közép és szórás paraméterezésével.
+> **Poisson:** P(X=k)=e⁻λ·λᵏ/k!, E[X]=λ, Var(X)=λ.
 
-## Gyorskérdések
-1. Mi a különbség közvetlen és közvetett mérés között?
-2. Írd fel az SI hét alapegységét!
-3. Mi a standard és a kiterjesztett bizonytalanság?
-4. Mi a különbség F(x) és f(x) között?
-5. Mitől lesz kisebb a közép bizonytalansága?
-6. Poisson(9) esetén mennyi a szórás? **3.**
+**Számpélda:** λ=4 esemény/perc. Pontosan 2 esemény valószínűsége exp(−4)·4²/2≈0,1465, a szórás √4=2.
+
+**Amire figyelek:** λ lehet nem egész, a megfigyelt eseményszám mindig egész. A modell alkalmazhatóságához az eseményfolyamat feltételeit is mérlegelem.
+
+**MATLAB:** demo_11_poisisson.m.

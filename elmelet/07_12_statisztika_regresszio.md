@@ -1,58 +1,85 @@
-# 7–12. elméleti tétel – statisztika, hibaterjedés, regresszió
+# Méréselmélet és -technika — 7–12. tétel
 
-## 7. Folytonos egyenletes eloszlás és jellemzői
+## 7. Folytonos egyenletes eloszlás
 
-**Vizsgaválasz:** X ~ U(a,b) esetén az [a,b] intervallumon a sűrűség állandó: f(x)=1/(b−a), azon kívül 0. Várható érték μ=(a+b)/2, variancia σ²=(b−a)²/12, szórás σ=(b−a)/√12. Eloszlásfüggvény az intervallumon F(x)=(x−a)/(b−a). Példa: műszer kvantálási/lekerekítési hibája −Δ/2 és +Δ/2 között közel egyenletes, u=Δ/√12.
+Az [a,b] tartományon állandó a sűrűségfüggvény. Gyakori közelítés, amikor egy műszer lekerekítési vagy kvantálási hibáját az utolsó digit felén belül egyenletesnek vesszük.
 
-**Tipikus hiba:** U(a,b) szórása nem (b−a)/2.
+> **X~U(a,b):** f(x)=1/(b−a) az [a,b] tartományban; μ=(a+b)/2; σ=(b−a)/√12.
 
-## 8. A mérés mint statisztikai mintavétel; várható érték és szórás becslése
+**Számpélda:** a felbontás 0,1 mm, a hiba [−0,05,+0,05] mm. A standard bizonytalanság 0,1/√12≈0,0289 mm.
 
-**Vizsgaválasz:** Ismeretlen eloszlású (vagy ismert családba tartozó) mérési adatokból n elemű mintát veszünk: x₁…xₙ. A várható érték becslése a mintaátlag x̄=(1/n)Σxᵢ. A minta korrigált varianciája s²=(1/(n−1))Σ(xᵢ−x̄)², becsült szórás s=√s². Az n−1 a szabadságfok miatti Bessel-korrekció. Független, azonos eloszlású megfigyeléseknél x̄ torzítatlan becslés a várható értékre és s² torzítatlan a varianciára. A szórás s önmagában általában nem torzítatlan σ-becslés.
+**Amire figyelek:** a maximális eltérés nem egyenlő a szórással; a valós műszernek a kvantáláson kívül más hibái is lehetnek.
 
-**Példa:** 10, 11, 12: átlag 11, korrigált szórás 1.
+## 8. A mérés mint statisztikai mintavétel
 
-## 9. Számtani közép és a számtani közép becsült szórása
+Több azonos típusú mérésből becsülöm az ismeretlen populáció jellemzőit. A mintaátlag a várható érték becslése. Az egyedi mérések szórását a **korrigált mintaszórással** számolom.
 
-**Vizsgaválasz:** A számtani közép a várható értéket becsli. A minta elemeinek szórása s nem azonos a közép standard hibájával: s_x̄ = s/√n = √[Σ(xᵢ−x̄)²/(n(n−1))]. A közép standard hibája több független mérésnél csökken. Ha az adatok korreláltak, a s/√n képlet általában nem érvényes; effektív mintaszám vagy kovariancia figyelembevétele kell.
+> **x̄ = (1/n)Σxᵢ; s² = [Σ(xᵢ−x̄)²]/(n−1); s=√s².**
 
-**Példa:** s=2 mm, n=25 → s_x̄=0.4 mm. Jelentés: x̄ ± s_x̄, ha standard bizonytalanságot adunk meg.
+Az n−1 osztó a szabadságfok miatti Bessel-korrekció. A korrigált mintavariancia független, azonos eloszlású minták esetén torzítatlan varianciabecslés. A szórás s ettől nem feltétlenül torzítatlan σ-becslés.
 
-**Tipikus hiba:** „szórás = std(x)/sqrt(n)” – ez a közép szórása, nem a méréseké.
+**Számpélda:** 9, 10, 11, 10 mm → átlag 10 mm; Σ(x−10)²=2 mm²; s=√(2/3)=0,8165 mm.
 
-## 10. Közvetett mérések bizonytalansága és hibaterjedés
+**MATLAB:** mean(x), std(x,0), measurement_stats(x).
 
-**Vizsgaválasz:** Ha y=f(x₁,…,xₖ), és az input mennyiségek becsült standard bizonytalanságai u(xᵢ), akkor kis bizonytalanságoknál elsőrendű Taylor-közelítéssel:
-u²(y) ≈ Σᵢ [∂f/∂xᵢ]²u²(xᵢ) + 2Σᵢ<ⱼ (∂f/∂xᵢ)(∂f/∂xⱼ)Cov(xᵢ,xⱼ).
-Független inputoknál a kovarianciás rész 0. A parciális derivált az érzékenységi együttható.
+## 9. A számtani közép becsült szórása
 
-**Kötelező példák:**
-- Téglatest: V=abc, független inputokra u(V)/V≈√[(u(a)/a)²+(u(b)/b)²+(u(c)/c)²].
-- Gömb: V=πd³/6, u(V)=|πd²/2|u(d); relatív: u(V)/V≈3u(d)/d.
-- Sűrűség: ρ=m/V; független inputokra u(ρ)/ρ≈√[(u(m)/m)²+(u(V)/V)²].
-- Körkúp: V=πd²h/12; relatív: u(V)/V≈√[(2u(d)/d)²+(u(h)/h)²].
+A gyártott darabok ingadozása és a becsült gyártási átlag bizonytalansága **nem ugyanaz**. Az egyik s, a másik s/√n, ha a mérések függetlenek.
 
-**Számolás:** m=15±0.1 g, V=5±0.2 cm³; ρ=3 g/cm³; u(ρ)=3·√[(0.1/15)²+(0.2/5)²]≈0.122 g/cm³.
+> **s(x̄) = s/√n = √[Σ(xᵢ−x̄)²/(n(n−1))].**
 
-**Ne keverd:** ha átlagból számítok egy jellemző méretet, a minta standard hibáját használjam; ha egy véletlenül kiválasztott legyártott termék szórása érdekel, akkor az egyedi adatok szórását. Ezek különböző feladatok.
+**Számpélda:** a 4 mért darabnál s≈0,8165 mm, de az átlag standard hibája 0,4082 mm.
+
+**Amire figyelek:** idősorban az egymást követő minták gyakran korreláltak; akkor a s/√n képlet alábecsülheti a bizonytalanságot. A feladatból először tisztázom, mit becsülök.
+
+## 10. Közvetett mérések bizonytalansága — hibaterjedés
+
+Ha a keresett mennyiség y=f(x₁,…,xₖ), a bemenetek bizonytalanságát a **parciális deriváltakkal** viszem tovább. A derivált megmutatja, hogy az adott bemenet kis változása mennyire változtatja meg a számított eredményt.
+
+> **u²(y) ≈ J C Jᵀ**, J=[∂f/∂x₁,…,∂f/∂xₖ], C az inputok kovarianciamátrixa.
+
+Független bemeneteknél az eredmény a deriváltak és standard bizonytalanságok négyzetes összegére egyszerűsödik. Korrelált inputoknál a kovariancia nem hagyható el.
+
+**Kötelező testképletek:**
+- Téglatest V=abc; ρ=m/(abc).
+- Gömb V=πd³/6; u(V)=|πd²/2|·u(d).
+- Körkúp V=πd²h/12; relatív u(V)/V≈√[(2u(d)/d)²+(u(h)/h)²] független inputokra.
+- Ellipszoid három átmérőből V=πABC/6.
+
+**Számpélda:** d=10,0±0,1 mm-es gömb. V=523,6 mm³; standard bizonytalanság kb. 15,7 mm³.
+
+**Amire figyelek:** ugyanazon darab a,b,c,m mérései korrelálhatnak. A számított mennyiség standard bizonytalanságának a kimenettel azonos egysége van.
+
+**MATLAB:** uncertainty_linear.m, demo_02_hibaterjedes.m.
 
 ## 11. Legkisebb négyzetek módszere
 
-**Vizsgaválasz:** A mérési pontok és a modell közötti eltérések négyzetösszegét minimalizáljuk: S(θ)=Σ(yᵢ−ŷᵢ(θ))². Egyenesre ŷᵢ=mxᵢ+b, keressük m,b paramétereket úgy, hogy S minimális legyen. Mátrixban: β̂=(XᵀX)⁻¹Xᵀy, ha X teljes oszloprangú; numerikusan biztonságosabban X\y MATLAB-ban. Független, homoszkedasztikus hibáknál a becsült maradékvariancia s² = Σrᵢ²/(n−2), a paraméterek kovarianciája s²(XᵀX)⁻¹. Súlyozott LK szükséges, ha az egyes pontok varianciája eltérő.
+Egy adott fizikai modell paramétereit úgy választom meg, hogy a mért és számított y közti eltérések négyzetösszege minimális legyen. Egyenesre y≈mx+b: a paraméterek a meredekség m és a tengelymetszet b.
 
-**Példa:** ha x nő és y közel lineárisan nő, egyenesillesztéssel meghatározhatjuk a meredekséget és annak bizonytalanságát.
+> **Minimalizálom:** Σ[yᵢ−(mxᵢ+b)]². **Mátrixosan:** β=[m;b]=X\y, X=[x,1].
 
-**Ne keverd:** a korreláció r nem azonos a meredekséggel. Az R² sem méri önmagában a modell helyességét.
+A maradék r=y−Xβ. A klasszikus modellben sᵣ²=(rᵀr)/(n−2); a paraméterek kovarianciája sᵣ²(XᵀX)⁻¹. Az illesztés ezért **m és b standard bizonytalanságát** is megadja.
+
+**Számpélda:** x=[0,1,2], y=[1,3,5]. A meredekség m=2, a tengelymetszet b=1. Az adatok pontosan az egyenesen vannak, a reziduum 0.
+
+**Amire figyelek:** R² közel 1 önmagában nem jelenti, hogy a fizikai modell jó. A reziduumot és a mértékegységeket is megvizsgálom.
+
+**MATLAB:** fitline_ols.m, demo_03_regresszio.m.
 
 ## 12. Lineáris regresszió és linearizálás
 
-**Vizsgaválasz:** A lineáris regresszió során y≈mx+b paramétereket becslünk adatokból. Nemlineáris fizikai törvényt algebrai átalakítással gyakran egyenes alakra hozunk; majd az illesztett paraméterekből visszaszámítjuk a fizikai paramétereket, és hibaterjedéssel a szórásaikat.
+Nem minden fizikai modell lineáris, de több modell átalakítható egyenesre. A lényeg nem csak az egyenesillesztés: az **eredeti fizikai paramétereket és azok bizonytalanságát vissza kell számolni**.
 
-**Alappéldák:**
-- Radioaktív bomlás: A(t)=A₀exp(−ln(2)t/T). Vegyük ln(A)=b+mt, ahol b=ln(A₀), m=−ln(2)/T. Ekkor T=−ln(2)/m, A₀=exp(b). Bizonytalanság: u(T)=|ln(2)/m²|u(m), u(A₀)=A₀u(b).
-- Barométer: p(h)=p₀exp(−(ρ₀g/p₀)h). Legyen Y=ln p, X=h: m=−ρ₀g/p₀, b=ln p₀. Ekkor p₀=exp(b), ρ₀=−m·exp(b)/g. U(p₀)=p₀u(b). **ρ₀ bizonytalanságánál m és b illesztési kovarianciáját is számításba kell venni**, különben a becslés pontatlan lehet.
+A radioaktív bomlás A(t)=A₀exp[−(ln2)t/T] logaritmizálva ln A=b+mt. Itt b=ln A₀ és m=−ln2/T.
 
-**Nagyon fontos korlát:** logaritmálni csak pozitív mért adatot lehet. A logaritmikus transzformáció megváltoztathatja a mérési hibák súlyozását; akkor célszerű, ha a feladat elvárja, és meg tudom indokolni.
+> **T = −ln(2)/m; A₀ = exp(b); u(T)=|ln2/m²|u(m); u(A₀)=A₀u(b).**
 
-## Példafeladat, papíron
-x=[1,2,3], y=[2,4,6]. Az illesztett egyenes y=2x, tehát m=2, b=0. A maradék 0, mert a pontok pontosan egy egyenesre esnek. Valós adatoknál ellenőrzöm a reziduumábrát és a maradékok szórását.
+**Számpélda:** m=−0,0020±0,0001 s⁻¹. Ebből T≈346,6 s és u(T)≈17,3 s.
+
+**Barométermodell:** p(h)=p₀exp[−ρ₀gh/p₀], ezért ln p=ln p₀−ρ₀gh/p₀. Ha a logaritmikus egyenes meredeksége m, tengelymetszete b, akkor p₀=exp(b), ρ₀=−m exp(b)/g. A ρ₀ bizonytalanságánál a m és b kovarianciája is számít.
+
+**Két szakaszos regresszió:** a baba feladatában két külön egyenest illesztek, a heti növekedés 7m [g/hét], az étrendváltás ideje a két egyenes metszéspontja.
+
+**Amire figyelek:** logaritmust csak pozitív adatra veszek. A transzformáció megváltoztathatja a zaj súlyozását, így szükség esetén más illesztési modellt kell indokolni.
+
+**MATLAB:** peldatar/09_radioaktiv.m, 06_barometer.m, 08_baba.m.

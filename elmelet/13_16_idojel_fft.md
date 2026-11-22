@@ -1,48 +1,61 @@
-# 13–16. elméleti tétel – időjelek, simítás, FFT és spektrumok
+# Méréselmélet és -technika — 13–16. tétel
 
-## 13. Időjelek időtartományban, korreláció, repülési idő
+## 13. Időjelek, korreláció, repülési idő
 
-**Vizsgaválasz:** Időjel bármely időben változó mennyiség: x(t) vagy mintavételezve x[n]. Vizsgáljuk középértékét, szórását, trendjét, periodicitását és időbeli összefüggéseit. Autokorreláció a jel és eltolt önmaga közötti kapcsolat: Rxx(τ)=E[x(t)x(t+τ)] (középérték-levonásos változata autokovariancia). Keresztkorreláció két jel közös mintázatának időeltolását mutatja: Rxy(τ). A maximumhoz tartozó késés repülési időből távolságot adhat. Egy visszavert impulzusnál oda-vissza út miatt **s = v·Δt/2**. A Δt = |lag|/fs, mert a MATLAB xcorr késése mintákban van.
+Az időjel x(t), digitalizálva x[n]. A minták egymástól időben függhetnek: lehet lassú trend, periodikus rezgés vagy valamilyen eseményhez tartozó impulzus.
 
-**Példa:** fs=1000 Hz, a visszhang 200 mintával később jön, v=340 m/s → Δt=0.2 s → s=34 m.
+**Autokorreláció** esetén a jelet saját eltolt példányával hasonlítom össze. Az ismétlődő maximumokból periodicitás becsülhető. **Keresztkorreláció** esetén két különböző jel közös mintázatának időbeli eltolását keresem. A MATLAB xcorr-függvényének lag változója általában **mintaszám**, nem másodperc.
 
-**Ne keverd:** xcorr tengelyén alapból a késés **mintákban**, nem másodpercben van; az xcorr(x,y) késésének előjele argumentumsorrendtől függ. Ellenőrizd a jelek fizikai sorrendjét.
+> **Δt=|lag|/fₛ. Visszhangnál: d=vΔt/2. Egyirányú terjedésnél: d=vΔt.**
 
-## 14. Trendek és simítás, Savitzky–Golay
+**Számpélda:** fs=22 000 Hz, az impulzus-visszhang késése 38 012 minta, a hangsebesség 1500 m/s. Δt≈1,728 s; d≈1295,9 m.
 
-**Vizsgaválasz:** Egy időjel leírható hasznos komponens + trend + zaj összegével. Trend lehet állandó szint, lineáris vagy lassú drift. A detrend tipikusan lineáris trendet von le; a mean(x) levonása csak DC-összetevőt távolít el. A mozgóátlag az egymás melletti minták átlagával simít; zajt csökkent, de a gyors változásokat és csúcsokat ellapítja. A Savitzky–Golay módszer csúszó ablakon belül alacsony fokú polinomot illeszt, és az ablak középpontjára becsült értékkel simít; a csúcsmagasság és csúcsalak sokszor jobban megmarad. Paraméterek: páratlan ablakméret, polinomfok < ablakméret.
+**Amire figyelek:** a korreláció eltolásának előjele a jelpár sorrendjétől függ. Zajos adatoknál a globális legnagyobb csúcs nem mindig a fizikai eseményhez tartozik. Az eredeti és a korrelációs jelgrafikont együtt ellenőrzöm.
 
-**Példa:** zajos, szinuszos rezgés: detrend → Savitzky–Golay → csúcsok közötti időből periódusidő. T=1/f.
+**MATLAB:** echo_delay_local.m, echo_peak_candidates.m, peldatar/11_szonar.m.
 
-**Ne keverd:** túl nagy ablak kisimíthatja az igazi csúcsokat; előtte-utána ábrát mindig készíts.
+## 14. Trendek, simítás és Savitzky–Golay
+
+A nyers időjelben lehet hasznos komponens, eltolás, lassú trend, zaj és tranziens. A **detrend** a trendet távolítja el; az **átlag levonása** csak a DC-összetevőt. A **simítás** a gyors ingadozást csökkenti, de a hasznos jel bizonyos részét is módosíthatja.
+
+A mozgóátlag az egymás melletti minták átlagát veszi; egyszerű és gyors, de a csúcsokat ellapíthatja. A Savitzky–Golay egy csúszó ablakon belül polinomot illeszt; megfelelő beállításnál a csúcsok alakját jobban megtartja.
+
+> **SG-feltétel:** az ablak páratlan hosszú, és a polinomfok kisebb az ablak hosszánál.
+
+**Számpélda:** egy 10 Hz mintavételezésű, zajos rezgésen 11 mintás, harmadfokú SG-t próbálok. A kapott görbét az eredetivel összevetem, a csúcsok közti T periódusidőt külön ellenőrzöm.
+
+**Amire figyelek:** ha az ablak túl nagy, a fizikai csúcs eltűnhet. A 0 késésű autokorrelációs maximum nem periódusbecslés.
+
+**MATLAB:** sgolay_local.m, local_peaks.m, peldatar/03_rezges.m, 18_napfolt_acf.m.
 
 ## 15. Frekvenciatartomány, mintavételezés, Fourier-analízis
 
-**Vizsgaválasz:** Fourier-analízissel egy jelet szinuszos összetevőkre bontunk. A diszkrét Fourier-transzformáció: X[k]=Σₙ₌₀ᴺ⁻¹ x[n]exp(−j2πkn/N). A MATLAB fft ezt gyorsan számítja. Mintavételi frekvencia fs=1/Δt. A Nyquist-frekvencia fN=fs/2. A mintavételezési tétel szerint egy fmax-nál nagyobb frekvenciát nem tartalmazó, sávkorlátozott jel egyértelmű visszaállításához fs>2fmax szükséges, a mintavételezés előtti anti-alias szűrés fontos. Ellenkező esetben átlapolódás (aliasing) történik.
+A Fourier-analízis a jelet különböző frekvenciájú összetevőkre bontja. A DFT diszkrét mintákra alkalmazott transzformáció; az FFT ennek gyors kiszámítása.
 
-**Példa:** fs=1000 Hz → fN=500 Hz; egy 700 Hz-es szinusz 300 Hz-nek látszhat.
+Ha a mintavételi frekvencia fs, a Nyquist-határ fs/2. A frekvenciarács távolsága Δf=fs/N, ahol N a mintaszám. A mintavételi tétel szerint ideálisan sávkorlátozott jel visszaállításához fs>2fmax szükséges. A Nyquist fölötti komponensek aliasingot okozhatnak.
 
-**MATLAB:** Y=fft(x); N=length(x); df=fs/N; f=(0:floor(N/2))*df. Egyoldali amplitúdóspektrumnál 2·abs(Y)/N csak a nem-DC, nem-Nyquist pozitív frekvenciájú bin-ekre érvényes.
+> **Nyquist:** fN=fs/2. **FFT rács:** Δf=fs/N. **Egyoldali belső bin:** A[k]=2|FFT(x)[k]|/N.
 
-**Ne keverd:** a frekvenciafelbontás df=fs/N, nem fs/2. A zérókitöltés finomabb megjelenítési rácsot ad, de nem javítja a tényleges frekvenciafeloldó képességet.
+A valós jel FFT-jének egyoldali amplitúdóspektrumában a DC-t nem duplázom, és páros N-nél a Nyquist-pontot sem.
 
-## 16. Auto- és keresztspektrum, Nyquist-frekvencia, frekvenciafelbontás
+**Számpélda:** fs=1000 Hz és N=2000. A Nyquist-határ 500 Hz, a felbontás Δf=0,5 Hz, a megfigyelés 2 s. Ha 700 Hz-es jelet mintavételezek 1000 Hz-cel, az 300 Hz-es aliasnak látszhat.
 
-**Vizsgaválasz:** Az autospektrum a jel teljesítményének/varianciájának frekvenciák szerinti megoszlását mutatja (PSD). A keresztspektrum két jel közötti frekvenciatartománybeli kapcsolatot, közös komponenseket és fázisviszonyt vizsgál. FFT-alapú periodogramnál – szokásos kétoldali PSD-konvencióban – Pxx[k]=|X[k]|²/(fs·N), Pxy[k]=conj(X[k])Y[k]/(fs·N); egyoldali PSD-nél a belső pozitív frekvenciájú pontokat duplázzuk. A PSD mértékegysége jel²/Hz. Szegmensek átlagolásával (Welch) zajos spektrumot simábbra becsülünk. Magnitúdó-négyzetes koherencia: Cxy(f)=|Pxy(f)|²/[Pxx(f)Pyy(f)] és 0–1 közötti, megfelelően átlagolt becslésnél.
+**Amire figyelek:** a frekvenciatengely nem az FFT tömb indexe. A nulla-kitöltés nem javítja a tényleges frekvenciafeloldást. Spektrális szivárgásnál az FFT csúcsa nem feltétlen a pontos fizikai amplitúdó.
 
-**Példa:** két mikrofon közös 200 Hz-es jelet vesz → a keresztspektrumban 200 Hz körüli összefüggés, a fáziskülönbségből az időeltolás vizsgálható.
+**MATLAB:** one_sided_fft.m, demo_07_spektralis_szivargas.m, demo_14_aliasing.m, peldatar/05_fuvola.m.
 
-**Vizsgán fontos:** fs=2000 Hz, N=4000 → Nyquist = 1000 Hz, df=0.5 Hz, mérési idő 2 s. Egyetlen FFT alapján számolt nyers koherencia triviálisan 1 is lehet, ezért koherenciát általában több ablak átlagolásával érdemes számolni.
+## 16. Auto- és keresztspektrum, Nyquist, frekvenciafelbontás
 
-## Mit rajzoljak le?
-- Időtartomány: t (s) – x(t) (mért egység), trend/simítás előtte-utána.
-- Korreláció: késés (minta vagy s) – korreláció.
-- FFT: frekvencia (Hz) – amplitúdó (mért egység), a csúcsok feliratozva.
-- Spektrum: f (Hz) – PSD (jel²/Hz), értelmes tartományra nagyítva.
+Az amplitúdóspektrum a szinuszos komponensek amplitúdóját adja. A **PSD** a jel teljesítményét / varianciáját frekvencia szerint osztja fel; az egysége a jel egységének négyzete per Hz.
 
-## Gyors, fejből tudandó képletek
-- fs = 1/Δt; fN = fs/2; Δf = fs/N; T_megfigy = N/fs
-- f = 1/T
-- Δt = |lag|/fs
-- echo: s = v·|lag|/(2fs)
-- 1-oldali FFT belső bin: A[k] = 2|FFT(x)[k]|/N
+**Autospektrum:** Pxx, egyetlen jel frekvencia szerinti teljesítménysűrűsége. **Keresztspektrum:** Pxy, két jel közös frekvenciás összefüggéseit, többek közt fázisviszonyát mutatja. Az abszolútérték-négyzetes koherencia a két jel frekvenciafüggő összefüggését 0–1 skálán írja le.
+
+> **Cxy(f)=|Pxy(f)|²/[Pxx(f)Pyy(f)].**
+
+A **Welch-módszer** a jelet több (sokszor átfedő) szegmensre bontja, ablakolja, és a szegmensenként számolt periodogramokat átlagolja. Ezzel a becsült spektrum kevésbé zajos lesz. Egyetlen FFT-párból képzett „koherencia” triviálisan 1 lehet; szegmensátlagolás szükséges.
+
+**Számpélda:** két mikrofon ugyanazt a 200 Hz-es jelet méri. Mindkettő PSD-jében jelentkezhet 200 Hz-es csúcs, a keresztspektrumban közös komponens, a koherenciában pedig magas érték.
+
+**Amire figyelek:** PSD és amplitúdóspektrum nem ugyanaz. Nyquist=fs/2, frekvenciafelbontás=fs/N, és a teljesítménysűrűség egysége jel²/Hz.
+
+**MATLAB:** spectra_welch_local.m, demo_05_fft_korrelacio.m.
