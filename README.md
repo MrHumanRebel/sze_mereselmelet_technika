@@ -22,18 +22,30 @@ A tárgy elméleti tételei, számolási feladatai és MATLAB-megoldásai egy he
 
 ## MATLAB – indítás
 
-A Current Folder legyen a repository \`matlab\` könyvtára.
+A Current Folder legyen a repository `matlab` könyvtára.
 
-\`\`\`matlab
+```matlab
 setup
 run_tests
 run_extended_tests
 run_source_data_tests
 run('demo_01_statisztika.m')
 run('peldatar/09_radioaktiv.m')
+```
+
+Néhány eredeti MAT fájl már benne van a repóban a [matlab/adatok](matlab/adatok/) mappában (baba, barométer, kúp, szferoid). A további forrásadatos példákhoz az eredeti MAT/WAV állományok szükségesek. Az adatok változóneveit és az adott feladat mérési egységeit a `matlab/peldatar/README.md` tartalmazza. A tesztfuttatások a GitHub [Actions](../../actions) alatt is követhetők.
+
+## Eredeti Moodle-fájlok
+
+A korábban hiányzó MAT, WAV, CSV, Excel, DAT, tanári MATLAB-kód és feladatállományok **importcsomagja** külön készült el. Az archívum 160 eredeti fájlt tartalmazott; a nyilvános importra 159 van előkészítve, mert a MathWorks \`UsingMatlab.pdf\` kézikönyve újraközlésre nem engedélyezett.
+
+A teljes készlet még **nem** szerepel a GitHubon. A csomag ZIP-jét a beszélgetésben lehet letölteni; a repositoryban a [forrásimportáló](scripts/import_moodle_bundle.py) végzi a SHA-256 ellenőrzést, és kizárólag a \`main\` ágban, force push nélkül rögzíti az állományokat.
+
+\`\`\`bash
+python scripts/import_moodle_bundle.py ~/Downloads/Mereselmelet_GKLM_FKTM013_teljes_GitHub_import.zip
 \`\`\`
 
-Néhány eredeti MAT fájl már benne van a repóban a [matlab/adatok](matlab/adatok/) mappában (baba, barométer, kúp, szferoid). A további forrásadatos példákhoz az eredeti MAT/WAV állományok szükségesek. Az adatok változóneveit és az adott feladat mérési egységeit a \`matlab/peldatar/README.md\` tartalmazza. A tesztfuttatások a GitHub [Actions](../../actions) alatt is követhetők.
+Az ellenőrzött archívum mappaszerkezetét, az eredeti fájlokat és a rendezett adatkönyvtárat a [forrástár leírása](forrasok/README.md) ismerteti. A teljes import után az eredeti MATLAB-adatfájlok a \`matlab/adatok/\` alatt is elérhetők.
 
 ## Vizsga
 
@@ -41,11 +53,11 @@ A feltöltött, **2024. szeptember 2-i vizsgarend** 120 perces számítógépes 
 
 ## Fájlok és verziók
 
-- \`kiadvany/\`: nyomtatható PDF, offline HTML és a kiadvány előállításához használt forrás.
-- \`elmelet/\`: szerkeszthető elméleti jegyzet és példák.
-- \`matlab/common/\`: segédfüggvények.
-- \`matlab/peldatar/\`: feladatmegoldások.
-- \`vizsga/\`: feladatkatalógus, vizsgarend, tanulási terv.
+- `kiadvany/`: nyomtatható PDF, offline HTML és a kiadvány előállításához használt forrás.
+- `elmelet/`: szerkeszthető elméleti jegyzet és példák.
+- `matlab/common/`: segédfüggvények.
+- `matlab/peldatar/`: feladatmegoldások.
+- `vizsga/`: feladatkatalógus, vizsgarend, tanulási terv.
 
 A repository fejlesztési ága: **main**.
 
