@@ -1,4 +1,5 @@
-# Oktatói/egyetemi adatfájlok és bináris anyagok: ne publikáljuk automatikusan.
+# A tanári forrásarchívum nagy, licencelt vagy nem ellenőrzött bináris fájljait
+# ne adjuk automatikusan a public Git repositoryhoz.
 *.mat
 *.wav
 *.mp3
@@ -10,11 +11,15 @@
 *.fig
 *.asv
 *.autosave
-.DS_Store
-Thumbs.db
 *.mlx
 *.slx
 *.slxc
-# MATLAB-generated results
+.DS_Store
+Thumbs.db
+
+# A saját szerkesztésű PDF kiadványokat viszont commitoljuk.
+!kiadvany/*.pdf
+!kiadvany/*.html
+
 results/
 outputs/
