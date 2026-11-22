@@ -1,0 +1,20 @@
+# Oktatói/egyetemi adatfájlok és bináris anyagok: ne publikáljuk automatikusan.
+*.mat
+*.wav
+*.mp3
+*.pdf
+*.rar
+*.zip
+*.7z
+*.xlsx
+*.fig
+*.asv
+*.autosave
+.DS_Store
+Thumbs.db
+*.mlx
+*.slx
+*.slxc
+# MATLAB-generated results
+results/
+outputs/
