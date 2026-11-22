@@ -14,7 +14,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y octave
-      - name: Run MATLAB core and extended tests
+      - name: Run core, extended and available original-data tests
         run: |
-          octave --no-gui --quiet --eval "cd('matlab'); run_tests; run_extended_tests;"
-# CAUTION: Octave success != MATLAB success. A valid licensed MATLAB test is still required.
+          octave --no-gui --quiet --eval "cd('matlab'); run_tests; run_extended_tests; run_source_data_tests;"
+# Az Octave-siker nem helyettesíti a hivatalos MATLAB laborban végzett futtatást.
