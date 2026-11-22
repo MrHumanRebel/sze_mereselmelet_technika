@@ -24,6 +24,9 @@ DOCS = [
         "matlab/peldatar/MEGOLDASOK_04_FREKVENCIATER.md",
         "matlab/peldatar/MEGOLDASOK_05_KIEGESZITOK.md",
     ], "Mereselmelet_es_technika_GKLM_FKTM013_MATLAB"),
+    ("Képletlap", "A vizsgához legfontosabb összefüggések", [
+        "elmelet/KEPLETLAP.md",
+    ], "Mereselmelet_es_technika_GKLM_FKTM013_Kepletlap"),
 ]
 
 def sections(source):
