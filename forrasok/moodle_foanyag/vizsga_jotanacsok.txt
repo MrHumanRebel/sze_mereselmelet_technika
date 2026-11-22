@@ -1,0 +1,26 @@
+Kedves Hallgatók!
+
+Szeretnék egy kis segítséget nyújtani önöknek azzal, hogy a korábbi vizsgákon előforduló tipikus hibákra felhívom a figyelmüket. Konkrét megoldásokat nem adok, csak iránymutatást arra nézve, hogy is kellene. A tárgy moodle oldalán minden segédanyag megtalálható, m-file-ok és elméleti háttéranyag egyaránt. Ha valami egyéb újdonságot kellene használniuk, mint pl. wavread vagy findpeaks parancs, akkor a matlab helpjében (vizsgán) vagy fórumokon (otthoni készüléskor) találnak leírásokat róluk.
+
+Amelyik feladatnál származtatott mennyiséget kell kiszámítani (pl. sűrűséget) ott minden megadott paraméternél ki kell szűrni a durva mérési hibákat. Nem elég csak megállapítani, hogy van benne durva hiba, azokat ki kell venni a mérési adatsorból. Ha pl. az "a" él 8. mérérési tagja ilyen hiba, azt a legegyszeűbben így lehet kivenni az mérésből matlab segítségével:
+a(8)=[];
+Ne felejtsék el, hogy a kivett mérési hiba(k) után újra és újra el kell végezni az ellenőrzést, hogy maradt-e benne durva mérési hiba.
+Durva hibákat minden esetben keresni kell az adatokban, akkor is, ha a feladat nem kéri ezt önöktől!
+A hibaterjedés kiszámításánál legjobb-legpontosabb, ha papíron elvégzik a deriválásokat a Gauss-féle hibaterjedési képlettel és azzal számolnak. Ha mégis a numerikus közelítést alkalmazzák a deriváltak kiszámításához, akkor a finomítást addig végezzék, míg a változása már a szórásnál kisebb lesz! Ha papíron deriválnak, akkor azt a papírt mellékeljék a vizsga anyagához!
+
+Ha egy nem lineáris összefüggésben kell a mérési adatokból meghatározni az összefüggés paramétereit és azok szórásait, akkor az összefüggést linearizálni kell először valamilyen algebrai átalakítással! Utána már lehet ennek az egyenesnek a paramétereit és szórásaikat Berta tanár úr által megírt lin_reg függvénnyel számoltatni. Ne felejtsék el, hogy a lin_reg.m file-t bemásolják a munkakönyvtárukba. Ha ezen adatok megvannak (egyenes paraméterei és szórásaik) még az eredeti összefüggésben szereplő paramétereket és szórásait is vissza kell alakítani.
+
+Ha egy jelben a harmonikus összetevőket kell meghatározni, akkor nem elég az fft-t kiszámolniuk, az ábrázolásnál a vízszintes tengelyt, a frekvenciát is ki kell számolni, hogy jó legyen az ábra.
+
+Általánosan elmondható, hogy ha egy idősorban feltűnik egy nem kívánt trend, akkor végezzék el a trend levonását (detrend), sokszor kell a zaj csökkentése érdekében valamilyen szűrést végezni (mozgóátlag vagy G-S). A Golay-Savitzky szűrőknél elvileg meg lehet találni az optimális paraméterezésűt, de azt önök nem tanulták, marad a "kísérleti próbálkozás, programozás" módszere. Szinte mindig ajánlatos a jeleket megtekinteni előtte-utána.
+
+Ha egy jelben csak nagyságrendileg kell becsülni a harmonikus összetevők frekvenciáját, amplitudóját, akkor nézzék meg az adatsorban hány csúcsot látnak. Ha a findpeaks parancs a használatakor jóval több csúcsot talál, akkor rossz paraméterezéssel használták a findpeaks parancsot, nézzék meg a súgóját.
+
+Ha kereszt vagy autokorrelációt számolnak, ne felejtsék, hogy a vízszintes tengely nem az időtengely, henem a mintavétel sorszámával van összefüggésben! Sok esetben, hogy jobban lássák a csúcsokat, érdemes itt is simítást alkalmazni.
+
+Remélem, ha ezt elolvassák, akkor már a tipikus hallgatói hibákat nem követik el!
+
+Sikeres vizsgát kívánok Önöknek!
+
+Szutyányi Márk
+

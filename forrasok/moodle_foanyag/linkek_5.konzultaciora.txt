@@ -1,0 +1,25 @@
+
+orai linkek
+
+FT, DFT
+https://web.archive.org/web/20230331141229/http://195.134.76.37/applets/AppletFourier/Appl_Fourier2.html
+
+https://phet.colorado.edu/en/simulation/legacy/fourier
+
+https://www.youtube.com/watch?v=mkGsMWi_j4Q
+
+https://web.archive.org/web/20231220110342/http://195.134.76.37/applets/AppletNyquist/Appl_Nyquist2.html
+
+alias:
+https://www.youtube.com/watch?v=fXa7BtnGXwA
+http://mriquestions.com/aliasing.html
+https://loonylabs.org/2020/09/04/the-nyquist-frequency/
+
+https://web.archive.org/web/20240610000155/http://195.134.76.37/applets/AppletFourAnal/Appl_FourAnal2.html
+
+https://www.nti-audio.com/en/support/know-how/fast-fourier-transform-fft
+
+egyéb érdekességek a FT-ról
+https://www.youtube.com/watch?v=r6sGWTCMz2k
+https://www.youtube.com/watch?v=spUNpyF58BY
+https://www.youtube.com/watch?v=PcYFnVBS_bg

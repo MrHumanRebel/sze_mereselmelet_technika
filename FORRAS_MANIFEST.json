@@ -1,0 +1,1299 @@
+{
+  "name": "Méréselmélet és -technika – GKLM_FKTM013",
+  "source_files": 179,
+  "excluded_public": [
+    "info2/info2/UsingMatlab.pdf"
+  ],
+  "entries": [
+    {
+      "source": "extra_konz_chatGPT/extra_konz/2Ds_abra.pdf",
+      "size": 100619,
+      "sha256": "b4d40ec4d32c349b693ca0da7d5e69c01b68682629c0d6b0fc0631a6c5273bf3",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/2Ds_abra.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/3Ds_abra.pdf",
+      "size": 137390,
+      "sha256": "60e15f51fe7de290e43056b978c7335e4b8230f44d43967422d65f43c621325e",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/3Ds_abra.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/adatok_motor.xlsx",
+      "size": 129467,
+      "sha256": "337436502d4a8701619c5161da5fd80ab1c8f67770c424f96d85b79648926a6e",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/adatok_motor.xlsx",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/create_final_matrix.m",
+      "size": 859,
+      "sha256": "85c654815686515e692b6ed939127ffc5de2c0de3071b5b2f776446b51e7d741",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/create_final_matrix.m",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/hatasfokmezo2.jpg",
+      "size": 95428,
+      "sha256": "d5d85320de8728a3c16c743ba23395c9e70fcc04fc4c972fe40503cc54df2c6d",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/hatasfokmezo2.jpg",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/link_extra_konz.txt",
+      "size": 595,
+      "sha256": "35c967eac298f9a0d1a87131968e6ce6642a94c11218879ead920b5bfa41abf4",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/link_extra_konz.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/matlab_ChatGPT.pdf",
+      "size": 47448,
+      "sha256": "6b5056f0b404af75f6e2070e8936a189a3083973d348a30e9a0a2bcc176d57a8",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/matlab_ChatGPT.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/process_matrix.m",
+      "size": 614,
+      "sha256": "35c73f62da0a007ed62aee973f78538487b7729bdf5b5aa0edf93744702af6d9",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/process_matrix.m",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/smooth_segments.m",
+      "size": 867,
+      "sha256": "583702f452a77f9b3ef75d69e62c7926deef80b59ff57a7752e3b61371e9a840",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/smooth_segments.m",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/uj_abrazolas.m",
+      "size": 1154,
+      "sha256": "89655a91d842c55786553bc2f315c8d9f43da37b9c552fff54ad943519e3f403",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/uj_abrazolas.m",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/uj_abrazolas_filtered.m",
+      "size": 1563,
+      "sha256": "754c7e6210f7ad0b6710dffb60294224d3a06466873ac7a2475400d5db09c191",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/uj_abrazolas_filtered.m",
+      "excluded_public": false
+    },
+    {
+      "source": "extra_konz_chatGPT/extra_konz/villanymotor.mat",
+      "size": 8102,
+      "sha256": "382934e98abd70d01ab6059cd8b10661d6cdafaaaf6b0b1da8c7e51c482aec9f",
+      "git": "forrasok/moodle/extra_konz_chatGPT/extra_konz/villanymotor.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat1/feladat1.pdf",
+      "size": 55763,
+      "sha256": "4395a42e42ab5f71be9aad325ca622418e5f608769c1b60af24a269c470dddd5",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat1/feladat1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat1/teglatest1.mat",
+      "size": 3439,
+      "sha256": "7d382d2e278d1a443e6e7d862133ac972acab5e46eefcaad0b6f41db790aa7d5",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat1/teglatest1.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat2/feladat2.pdf",
+      "size": 31595,
+      "sha256": "5a83a11d53bd4800529bacbba572295e49f73ad940984db928b4e608a6ef67c9",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat2/feladat2.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat2/korkup1.mat",
+      "size": 1778,
+      "sha256": "0443ecd4d3e9dfa0d34a93f3a53f114d1a22b8593f789e7969b9ec1fcc0b8b53",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat2/korkup1.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat3/feladat3.pdf",
+      "size": 68941,
+      "sha256": "59ab8bdb05b9d1eada52c3664eb4713a253c2ddbb1b2632fc337b9d4c31110dc",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat3/feladat3.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat3/rezges5.mat",
+      "size": 3973,
+      "sha256": "d6941d938583d803da467539bda3620a50e9e88f3d09de77ba33b0115fb348bc",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat3/rezges5.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat4/feladat4.pdf",
+      "size": 56808,
+      "sha256": "a741db557ee44b5a4b2a71a547a6c97c9e01d1f43e2a1f54f3d0c3ab5433ad32",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat4/feladat4.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat4/hang_jelek.mat",
+      "size": 1657090,
+      "sha256": "f8209d507aaeb8e7d14e6f8022658aa2745713729125030e4e159d8865524683",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat4/hang_jelek.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat5/feladat5.pdf",
+      "size": 32166,
+      "sha256": "64607c553af27d10895c21df3f8cddf5ba6a2551ed6395b2f72ce19663de820f",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat5/feladat5.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat5/fuvola8.wav",
+      "size": 88244,
+      "sha256": "56c63334ef8e99fae988231b9ab3f201f8d72ba303a0a0fb60291dbd0a6bae48",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat5/fuvola8.wav",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat6/barometer.mat",
+      "size": 755,
+      "sha256": "9e4b570c785380092f9bac9cd77a93cb77cf67cd5ff7f5045deac71172a5d645",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat6/barometer.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat6/feladat6.odt",
+      "size": 31817,
+      "sha256": "069558a688dfcf242580f3a735e5455062af9f2c09d68d727d73adf254e18a00",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat6/feladat6.odt",
+      "excluded_public": false
+    },
+    {
+      "source": "gyakorlo_peldak/feladat6/feladat6.pdf",
+      "size": 73516,
+      "sha256": "ed306c865aa89b8466b3b1cab3cc382599a31eee5aef2fa3aeac566fea2b42e2",
+      "git": "forrasok/moodle/gyakorlo_peldak/feladat6/feladat6.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/A.dat",
+      "size": 33,
+      "sha256": "2284b68952411bf47b022b67000174b9559d2b0031ad3af0173b633bfe213198",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/A.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_1.pdf",
+      "size": 204524,
+      "sha256": "23803bd6672bd9859dbb2d5171e80a5723ad1811f4995ad76ef9ddbb77c8feef",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/b.dat",
+      "size": 15,
+      "sha256": "9699782c9055acb55c924aedc7dd0cc89fe2ca9d3c55242867bc17da051dfd9f",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/b.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/result.mat",
+      "size": 232,
+      "sha256": "10ffffd1019c7a5462f6225442342ebaf4b5d98f94cfa3ae4fd0e6fba8bece3d",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Gyakorlat/result.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Matlab-1.pdf",
+      "size": 1126854,
+      "sha256": "c9ebf52d0199fa1a83ea79b56508a4ced93206b2767689f41f8d03b6b44ae88a",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Matlab-1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Matlab1 minta.pdf",
+      "size": 111901,
+      "sha256": "22e1c1aec7fbe18d7689364e7b8235feafe1bd815c659f20ee9f5ead42e7c48c",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Matlab1 minta.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/Octave_letöltés.txt",
+      "size": 232,
+      "sha256": "432ac0531ec2c1ed0e95e72afb294f4da3b86853f023a20f5070b65807828fad",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/Octave_letöltés.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/animacio.m",
+      "size": 1146,
+      "sha256": "62cbfd5f7cacca0016af1105051af7c33ecac42feff3585e5776162300b0bd40",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/animacio.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/matlab.link",
+      "size": 208,
+      "sha256": "7407429404ccf32ecdf58fbde86a82cb9d892a4bcf9085add91a2b0a0078f3a8",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/matlab.link",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/08 Mérnöki számítások (Matlab)/parancsok_1.m",
+      "size": 2627,
+      "sha256": "4b68b5b64afed8432760ed22c4155c95c323f87f8f45526aa341100980af7e28",
+      "git": "forrasok/moodle/info2/info2/08 Mérnöki számítások (Matlab)/parancsok_1.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/Ab.csv",
+      "size": 51,
+      "sha256": "830eb8b8a02834df6ff2f2bb491f89f1a46676d5d851944dbc427ec8f76fedef",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/Ab.csv",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_2.pdf",
+      "size": 66422,
+      "sha256": "334775a36d716c03a6be17004d38fb465d2a28cd609186be6cc0678854bb41a2",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_2.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/Gyakorlat/adat.xls",
+      "size": 25088,
+      "sha256": "06d6f774514b4c2734c6a684215e9e5c3a54ccf259d5c5e278af89687f50ac1d",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/Gyakorlat/adat.xls",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/Matlab-2-3.pdf",
+      "size": 584958,
+      "sha256": "d8d969a49a28db4d31f21a9fd8af6141c3ac0e7334c15b9a3460318e0b9aa6ff",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/Matlab-2-3.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/Matlab2 minta.pdf",
+      "size": 139421,
+      "sha256": "25bfb0c85364e8f6ba52ae5271c238a6beef7105c45b0cd8d2534e769aa000e1",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/Matlab2 minta.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/adatok.xls",
+      "size": 24064,
+      "sha256": "47cdfc3d428838093c824b007bd05adce0d52023ff78a87b69e3137079622e1c",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/adatok.xls",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/minta_kész1.xls",
+      "size": 40960,
+      "sha256": "7807fb285fc2466447ec056bd2baae1b45805518008d38af6aa4e92b82703294",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/minta_kész1.xls",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/09 Mérnöki számítások (Matlab)/parancsok_2.m",
+      "size": 4823,
+      "sha256": "a6f6b475b4c17eb4a46bc27988b7f03db7ce867d59d1eb176bd0473f7cc4b811",
+      "git": "forrasok/moodle/info2/info2/09 Mérnöki számítások (Matlab)/parancsok_2.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/10 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_3.pdf",
+      "size": 497473,
+      "sha256": "c5c3db326002552ada9247406d7fc57e68fa5904c36d4bc189cfcb5d1b9f8e17",
+      "git": "forrasok/moodle/info2/info2/10 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_3.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/10 Mérnöki számítások (Matlab)/Matlab-2-3.pdf",
+      "size": 584958,
+      "sha256": "d8d969a49a28db4d31f21a9fd8af6141c3ac0e7334c15b9a3460318e0b9aa6ff",
+      "git": "forrasok/moodle/info2/info2/10 Mérnöki számítások (Matlab)/Matlab-2-3.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/10 Mérnöki számítások (Matlab)/Matlab3 minta.pdf",
+      "size": 125761,
+      "sha256": "597f2e1fa4133fbdd04b830711dbb1000428d3d98d9d2ff94b31fa3e8ba468e2",
+      "git": "forrasok/moodle/info2/info2/10 Mérnöki számítások (Matlab)/Matlab3 minta.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/dot2dot.m",
+      "size": 228,
+      "sha256": "31da91387db5667fb415c24accd4af65dbd2ce61ef14847307a82beb507ce57e",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/dot2dot.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/f.m",
+      "size": 77,
+      "sha256": "bdc8fa3392ffaf3d2866feb64d25381f48b7603f7efd6101f916545a6cf2df32",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/f.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/f2.m",
+      "size": 82,
+      "sha256": "4d62e2a018b122623364b1954a30c9f2721d5e042912c8d111268f6d961bb021",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/f2.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/f3.m",
+      "size": 62,
+      "sha256": "2080b0a760e053904906fc88d53f5a4f20c63d589c4c1fad7a4c3af2e715390d",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/f3.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/forgat.m",
+      "size": 226,
+      "sha256": "d0b76d09ce12bba2f1e6771d367e940e1cd1b89de25f88228fd8b403d598ed45",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/forgat.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/rezgo.m",
+      "size": 165,
+      "sha256": "69cf14df84a58d3d9d8d17603f9bd761d791c9d23551d8215277ffcf804b78f1",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/11gyak_fájlok/rezgo.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_4.pdf",
+      "size": 169169,
+      "sha256": "8bb25bffe419ea4a9c39a5a1265644a1d3b9bc0c7cf7a875ac4c0e02ef5e6638",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/Gyakorlat/Feladat_4.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/Matlab-4-5.pdf",
+      "size": 927303,
+      "sha256": "e1993c29ef476caddf6aeb234db3ade927033cf0555051e398e88fb8b998da73",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/Matlab-4-5.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/Matlab4 minta.pdf",
+      "size": 123468,
+      "sha256": "85a0797d510b4fd313c95ec118e026bbf9acb6ba25b9de67b4b17387ce07b92c",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/Matlab4 minta.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/clockex.m",
+      "size": 1195,
+      "sha256": "e18e63286a89f47ecfcb300ab52cc9f9a9fc40474f5db88584e956f6ba404a77",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/clockex.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/dot2dot.m",
+      "size": 228,
+      "sha256": "31da91387db5667fb415c24accd4af65dbd2ce61ef14847307a82beb507ce57e",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/dot2dot.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/f1.m",
+      "size": 39,
+      "sha256": "b80b0875a1b3b9166ed110878173a7c204f5e9e4e6b799440056890d87490653",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/f1.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/forgat.m",
+      "size": 226,
+      "sha256": "d0b76d09ce12bba2f1e6771d367e940e1cd1b89de25f88228fd8b403d598ed45",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/forgat.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/fv.m",
+      "size": 49,
+      "sha256": "96e293054038cf0df39602d1a2f06c7e92d7c7f80bdf6d006f9d91d6fbdad20b",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/fv.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/fw.m",
+      "size": 51,
+      "sha256": "52f34e75ee179b541c0371b79d9f5443954053fff31fb6a0784523a136108230",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/fw.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/11 Mérnöki számítások (Matlab)/gomb.m",
+      "size": 568,
+      "sha256": "b9fa24f47682d22210866b7ca00606fc3202d9b11727944df48a5f6dbaf301d0",
+      "git": "forrasok/moodle/info2/info2/11 Mérnöki számítások (Matlab)/gomb.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/Matlab-4-5.pdf",
+      "size": 927303,
+      "sha256": "e1993c29ef476caddf6aeb234db3ade927033cf0555051e398e88fb8b998da73",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/Matlab-4-5.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/f1.m",
+      "size": 95,
+      "sha256": "a3e17ea21d006449b679f33379499dae83bdc23e542f0ea7ebb84d7b7bcba64d",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/f1.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/A.dat",
+      "size": 33,
+      "sha256": "2284b68952411bf47b022b67000174b9559d2b0031ad3af0173b633bfe213198",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/A.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/As.dat",
+      "size": 62,
+      "sha256": "1fed219331c97f6344a98779734ea3b5842e393e53bf54a31400418716b5ce7b",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/As.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/At.dat",
+      "size": 37,
+      "sha256": "7c079a5a53cd1370ffa54d80a1a6ea5e5063730a5bd96ca037939051e789c4a8",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/At.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/Feladat_5.pdf",
+      "size": 231238,
+      "sha256": "93ba17834bd040bd68b4d5265c41210ad2a38b7feaaf42e5f16375736372a979",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/Feladat_5.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/M.dat",
+      "size": 59,
+      "sha256": "09b3754878e6d0273e15ffa0e6f53d854647b2f7d5b3088454d4ee48bcef6993",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/M.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/b.dat",
+      "size": 15,
+      "sha256": "9699782c9055acb55c924aedc7dd0cc89fe2ca9d3c55242867bc17da051dfd9f",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/b.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/bs.dat",
+      "size": 17,
+      "sha256": "15b270f779342ebaab2e2e6e33bafe867939655d4a463132566e93918df07bb0",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/bs.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/bt.dat",
+      "size": 14,
+      "sha256": "f05822d4f3f9521d3c09775a3afbc0b7804892283828799039880a02f393ecb1",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/bt.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/f.m",
+      "size": 77,
+      "sha256": "bdc8fa3392ffaf3d2866feb64d25381f48b7603f7efd6101f916545a6cf2df32",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/f.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/f2.m",
+      "size": 82,
+      "sha256": "4d62e2a018b122623364b1954a30c9f2721d5e042912c8d111268f6d961bb021",
+      "git": "forrasok/moodle/info2/info2/12 Mérnöki számítások (Matlab)/gyakorlat/f2.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/F.m",
+      "size": 127,
+      "sha256": "df3c9b7c05135ada1a325892639e3635e9c33fb34bad04faca5a1d9d0c1ebfde",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/F.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/FLV.m",
+      "size": 173,
+      "sha256": "3ec30a89f197e3dfc1fbc582cbd99be3b6289595510ecec8caac4440bec88f86",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/FLV.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/Matlab6.pdf",
+      "size": 211849,
+      "sha256": "3080d27164a20047013c8563762bec569e0f001260e7d35d75cdf8735148a978",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/Matlab6.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/Matlab7.pdf",
+      "size": 989763,
+      "sha256": "7b2bedfbe1228dd83b8cb7e3bb7952a4f87ac376a237d9f6bae69417adeafab9",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/Matlab7.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/concen.m",
+      "size": 55,
+      "sha256": "8876392ec91e8fee52c7f1536d3063c7a4f2dcf8fa98e90848d54e01615172ed",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/concen.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/data.txt",
+      "size": 35366,
+      "sha256": "90a4fb54102ec3fbca4b766d3dd6cf5b1de16376c010e7ca9a3462d84201cc82",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/data.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/fitc.m",
+      "size": 950,
+      "sha256": "c9db6aa4b31507da0a3bdfdf03eabf497cca9f6cb146581af85ed3fb3380a6a6",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/fitc.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/fitcurve.m",
+      "size": 667,
+      "sha256": "29c442a369b0b4488bd072ab6af30e3339254696227483a2fc6ffa7c3b84cad7",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/fitcurve.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/A.dat",
+      "size": 33,
+      "sha256": "2284b68952411bf47b022b67000174b9559d2b0031ad3af0173b633bfe213198",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/A.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/As.dat",
+      "size": 62,
+      "sha256": "1fed219331c97f6344a98779734ea3b5842e393e53bf54a31400418716b5ce7b",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/As.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/At.dat",
+      "size": 37,
+      "sha256": "7c079a5a53cd1370ffa54d80a1a6ea5e5063730a5bd96ca037939051e789c4a8",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/At.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/Feladat_6.pdf",
+      "size": 665402,
+      "sha256": "41ca61812805ac44b4ba377dc34fbb3f1884eb2025788693bc19570e5bdc44a8",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/Feladat_6.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/anim.txt",
+      "size": 124,
+      "sha256": "aaa6e085953c127bfb4e50d39f9835a40ea0530d52bf156d2431b1d9879536ed",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/anim.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/b.dat",
+      "size": 15,
+      "sha256": "9699782c9055acb55c924aedc7dd0cc89fe2ca9d3c55242867bc17da051dfd9f",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/b.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/bs.dat",
+      "size": 17,
+      "sha256": "15b270f779342ebaab2e2e6e33bafe867939655d4a463132566e93918df07bb0",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/bs.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/bt.dat",
+      "size": 14,
+      "sha256": "f05822d4f3f9521d3c09775a3afbc0b7804892283828799039880a02f393ecb1",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/bt.dat",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/data.txt",
+      "size": 35366,
+      "sha256": "90a4fb54102ec3fbca4b766d3dd6cf5b1de16376c010e7ca9a3462d84201cc82",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/data.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/fitc.m",
+      "size": 950,
+      "sha256": "c9db6aa4b31507da0a3bdfdf03eabf497cca9f6cb146581af85ed3fb3380a6a6",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/fitc.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/fitcurve.m",
+      "size": 667,
+      "sha256": "29c442a369b0b4488bd072ab6af30e3339254696227483a2fc6ffa7c3b84cad7",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/fitcurve.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/gyak-fel-adatok.txt",
+      "size": 35390,
+      "sha256": "b5d4ef66d2ac64d3a6f463c2916fbc6dc1aaa192ecf2d15c39dbcb266047de61",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/gyak-fel-adatok.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/outlier_filter.m",
+      "size": 216,
+      "sha256": "2348fc4c78882c38b0168d3e1fcb99d2a08222decb77b3f69997cb8b8b891d79",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/outlier_filter.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/shape5.m",
+      "size": 106,
+      "sha256": "f00bde91fafda8c23dd35b778520920ce85401fc038d356a1cac0e9bd42d444e",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/gyakorlat/shape5.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/outlier_filter.m",
+      "size": 216,
+      "sha256": "2348fc4c78882c38b0168d3e1fcb99d2a08222decb77b3f69997cb8b8b891d79",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/outlier_filter.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/regresszio.pdf",
+      "size": 1142849,
+      "sha256": "c058f7154173738d3b5a16fd1a463c24c9c0a5a43117853c7c747df05d6d2597",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/regresszio.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/shape.m",
+      "size": 140,
+      "sha256": "b387fb3df3e4f90303015660dd8aa827703063fae5169b15100ea7fa401f46dd",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/shape.m",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/13 Mérnöki számítások (Matlab)/y.txt",
+      "size": 836,
+      "sha256": "474b358d41f15e3fac38aafdf762f481f5378e161bab6fdb3c05b2ed6ee837fb",
+      "git": "forrasok/moodle/info2/info2/13 Mérnöki számítások (Matlab)/y.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/NGB_SZ003_2_tematika.pdf",
+      "size": 2972314,
+      "sha256": "2dfec5d41915250021ef1dea798c2769b4f60483f2fc5ac2f0ec13852d93ddd9",
+      "git": "forrasok/moodle/info2/info2/NGB_SZ003_2_tematika.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "info2/info2/UsingMatlab.pdf",
+      "size": 10685440,
+      "sha256": "ce9bbf2886e8c4aeec08aeb6bcc79aee0a6fcff0e187250d1093e73816c6f0c4",
+      "git": "forrasok/moodle/info2/info2/UsingMatlab.pdf",
+      "excluded_public": true
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Berta_Miklos/autokorr.m",
+      "size": 256,
+      "sha256": "48bdf5238dab3178ab2f087b10020880915e34720c8893eebb4cbe38308c508e",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Berta_Miklos/autokorr.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Berta_Miklos/korrelaciok.m",
+      "size": 510,
+      "sha256": "e6ad75a849b180ec4a57083f13028fd552b33bf57486677017ef3b5c2bacefb3",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Berta_Miklos/korrelaciok.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Berta_Miklos/mozgo_atlag.m",
+      "size": 250,
+      "sha256": "bb529d72a5a47339a31b3dbb02b5d6a5e9333919dbd2f28c7816eb50e8e6f80d",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Berta_Miklos/mozgo_atlag.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Berta_Miklos/non_stat_signal.mat",
+      "size": 10106,
+      "sha256": "c095b0daff111b1a9fe644db19b1f492e36dad0f1675eb23ede5b326ee422caf",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Berta_Miklos/non_stat_signal.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Berta_Miklos/sav_golay.m",
+      "size": 269,
+      "sha256": "0dc37f81a40d9a4d45892c49d47fee68e979a40d7eeea675a5744c9729065c8f",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Berta_Miklos/sav_golay.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Berta_Miklos/trend_nelkul.m",
+      "size": 225,
+      "sha256": "20dcd9c5a8d6d691b9ba180f836f16064af18367d2fb107a0a043eab6fe55034",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Berta_Miklos/trend_nelkul.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/CCF_demo_gemini_AI.m",
+      "size": 10767,
+      "sha256": "3b53858cbc3f1b48c668b786d1897cb92347ef312d699889f6244077c569c11b",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/CCF_demo_gemini_AI.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/havi_napfolt.csv",
+      "size": 123956,
+      "sha256": "7fb5781716155a5372f709193d132a98e3bf6efe1186f187e97c7c94b576b65f",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/havi_napfolt.csv",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_ACF.m",
+      "size": 1311,
+      "sha256": "2e3956a415db0ea42c136016d62582c6e4f3e337dd7f236285b7944e38e7d512",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_ACF.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_detrend.m",
+      "size": 506,
+      "sha256": "1f6881296bcd0934a057d45532b5b854ec28c8ed6f37ec5ed8936c40b95acf38",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_detrend.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_napfolt_ACF.m",
+      "size": 806,
+      "sha256": "9f604649ab590d39a9ef0293c3e3a6b4b841da2fe2a7d66327366149a606da6d",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_napfolt_ACF.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_simitasok.m",
+      "size": 1646,
+      "sha256": "d74f2c73a043b544f157d6357b7d4f1c76b481566efe2614419727b1a67816c0",
+      "git": "forrasok/moodle/konzultacio4/konzultáció m-file-jai/Szutyanyi_Mark/pelda_simitasok.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122/baba1.mat",
+      "size": 289,
+      "sha256": "d0d0ef3981b7c98f939bf598672925a74422d351417ff17a5dcb4a0eef9d474e",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122/baba1.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122/baba1_megoldas.m",
+      "size": 1841,
+      "sha256": "a785d1c57bd9d7d0dc3e021c690397a7b69e227fccf6dd9ad177d7af0fb849a6",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122/baba1_megoldas.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122/baba1_megoldas_2026.m",
+      "size": 1376,
+      "sha256": "54f335863faac7c66910b9480e1ffd9c7af91a0da2a4f2814166fe1f1c349507",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122/baba1_megoldas_2026.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122/baba1_vizsgafeladat.pdf",
+      "size": 56645,
+      "sha256": "990b322396e76b1206e9444c222a2ad1ff3229ef672c03b89acb6d9b6b6352b3",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122/baba1_vizsgafeladat.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122/lin_reg.m",
+      "size": 555,
+      "sha256": "35974778422a135535d079add8a5ebdde6bdd86843abaad206da0081528eef23",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122/lin_reg.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122/num_out_data.m",
+      "size": 380,
+      "sha256": "e845846977c8402192aa285a63cd74a7a3ff31ef6e0bca9ff7204cec85abc94b",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122/num_out_data.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/240_11240.wav",
+      "size": 356608,
+      "sha256": "1a190fe0920c0562fa10370b08b36ad5b6de93c1c6ea1788205e0b99bd703ea8",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/240_11240.wav",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/guitar_A.wav",
+      "size": 84048,
+      "sha256": "bab48a5c0c9fa25e44509905219385d9fc3473104be4ffb6d2c15c94c9a70050",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/guitar_A.wav",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/motorhang.mat",
+      "size": 108249,
+      "sha256": "83b57cd674283974937ab95e005409b617ed4991820367e67674d10d653b8beb",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/motorhang.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/motorhang_megoldas.m",
+      "size": 593,
+      "sha256": "55aceb34df258c24d8f6fe2fb25b659d7f83adb1046123947b4fcb871fa83388",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/motorhang_megoldas.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/orai_megoldas_gitar.m",
+      "size": 523,
+      "sha256": "5064f87916377dfd0a64e52c61d6cc9e7f72ebacc21328d4c12ce86b2d636aed",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/orai_megoldas_gitar.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/pelda_dft.m",
+      "size": 1514,
+      "sha256": "d8f522c8ba7447068c14a27651bd2eaae3e959ab3c6f65cfcc337ac7bc8f7e6d",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/pelda_dft.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/pelda_fft.m",
+      "size": 848,
+      "sha256": "7b5f031b0bdbe06d5aca00ad468f384bb252fd7c8b70ea00a59978f0ed3543c7",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok, adatfile-ok-20261122 (1)/pelda_fft.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122/distributions.m",
+      "size": 1164,
+      "sha256": "9cb5fb509f234aeee29903d7f52e1c0cfbdb5dafdee2372eef6f66f496b00202",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122/distributions.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122/norm_dist.m",
+      "size": 203,
+      "sha256": "5def671638df7e1b44b6b9ef5dd3506b72586298128aacc9694e6bf12a2f4ac5",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122/norm_dist.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122/sin_plot.m",
+      "size": 1383,
+      "sha256": "15aad490b281b2e0232ab803c849f6a9945a9cf436de4da86c0c9b31c9d5ce0a",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122/sin_plot.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122 (1)/atlag_es_szorasa.m",
+      "size": 490,
+      "sha256": "8f4b23a4cd6a78793df37eb3ad5891d3625f706c4c4d804900d10fdc63ce1d99",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122 (1)/atlag_es_szorasa.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122 (1)/centralis_hatareloszlas_pelda.m",
+      "size": 800,
+      "sha256": "db9071338d5c105e9c51f618825e615b328ae435386007ae5a847bc074514bc4",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122 (1)/centralis_hatareloszlas_pelda.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122 (1)/hibaterjed_1.m",
+      "size": 362,
+      "sha256": "805c7c057b019e48dbc8bf72ff74c80b188de055d46f9debf08fcd7f68f96b4c",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122 (1)/hibaterjed_1.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122 (1)/hibaterjed_2.m",
+      "size": 521,
+      "sha256": "3853e74a239a67f3c1bff9ef54ad55ff93fdf37263fe8175b5bc9ed7450bff33",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122 (1)/hibaterjed_2.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122 (1)/inga_lengesideje.m",
+      "size": 806,
+      "sha256": "acd17d3522032756bf38e9f760a7f1c8a947d2c6572a5df2024abe0de4966408",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122 (1)/inga_lengesideje.m",
+      "excluded_public": false
+    },
+    {
+      "source": "konzultáción használt m-file-ok-20261122 (1)/inga_lengesideje_korr.m",
+      "size": 699,
+      "sha256": "68a2aa40b4255c4e1d1a84e24e9385acc8114e345715bea78208dff435fafc97",
+      "git": "forrasok/moodle/konzultáción használt m-file-ok-20261122 (1)/inga_lengesideje_korr.m",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122/cso_adatok.mat",
+      "size": 43380,
+      "sha256": "c40dff61ee0e0d51a86cc762daa60a8c515d75332b7f895133caf4ffaf5eca7a",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122/cso_adatok.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122/cso_teh_nyom.pdf",
+      "size": 406114,
+      "sha256": "9b750a9f5bae44cea989a730d589ba12050ea9b2f2690161dd507a2d6b523162",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122/cso_teh_nyom.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122/szferoid1.mat",
+      "size": 1213,
+      "sha256": "325a0625de4acb16527e32c731ad412fbab95fb0149e63d1f45b49412f8d4c00",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122/szferoid1.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122/szferoid_vizsgafeladat.pdf",
+      "size": 82535,
+      "sha256": "9d027c84fff64c411fb92a8d030545ef1d8bb6e9eba2f07c2784ec2b7fe3f213",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122/szferoid_vizsgafeladat.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122 (1)/lin_reg.m",
+      "size": 555,
+      "sha256": "35974778422a135535d079add8a5ebdde6bdd86843abaad206da0081528eef23",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122 (1)/lin_reg.m",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122 (1)/rad_bomlas.mat",
+      "size": 5113,
+      "sha256": "1cba8e90bc56d19e54dd7fe1f2ee4925edbc909897561d7d33d5fd632fb4a590",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122 (1)/rad_bomlas.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz-20261122 (1)/radioaktiv_bomlas.pdf",
+      "size": 714788,
+      "sha256": "23faa8f457e4211a2ae15427ac016a9a06dacdf0bc3d16fd31bb0f118821b1a0",
+      "git": "forrasok/moodle/otthoni gyakorláshoz-20261122 (1)/radioaktiv_bomlas.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz2-20261122/barometer.mat",
+      "size": 755,
+      "sha256": "9e4b570c785380092f9bac9cd77a93cb77cf67cd5ff7f5045deac71172a5d645",
+      "git": "forrasok/moodle/otthoni gyakorláshoz2-20261122/barometer.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz2-20261122/feladatok.pdf",
+      "size": 265853,
+      "sha256": "9dc83807dfb48792a8de5dfbc7f7c49909dbb3f9c819213f378e06c8d3c4caff",
+      "git": "forrasok/moodle/otthoni gyakorláshoz2-20261122/feladatok.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz2-20261122/kep1.JPG",
+      "size": 2618811,
+      "sha256": "5fc266f64701bcfa4c84139f119742020de0d5fc6ca8ae9bb31f167ad4eb68bf",
+      "git": "forrasok/moodle/otthoni gyakorláshoz2-20261122/kep1.JPG",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz2-20261122/kep2.JPG",
+      "size": 2739582,
+      "sha256": "245cbc3ce47c8781aebd2d262e72cb3e6621d1317be96ee1ae010d11a34d6cfd",
+      "git": "forrasok/moodle/otthoni gyakorláshoz2-20261122/kep2.JPG",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz2-20261122/lin_reg.m",
+      "size": 364,
+      "sha256": "d9f2b9b8abfcf5ae1e5789d9c322fdce93938dc1a78e8e7ce6df770a91acc8e4",
+      "git": "forrasok/moodle/otthoni gyakorláshoz2-20261122/lin_reg.m",
+      "excluded_public": false
+    },
+    {
+      "source": "otthoni gyakorláshoz2-20261122/linearizalas_pelda.txt",
+      "size": 3174,
+      "sha256": "e9bd3f019506614bbe2c4226cfab7ef0487634115997fb6b9cd55385e9eb4882",
+      "git": "forrasok/moodle/otthoni gyakorláshoz2-20261122/linearizalas_pelda.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122/meres2konz_1.png",
+      "size": 320960,
+      "sha256": "320d9d19ecc0bc9be5900e4e26f8290579706332735b2cbe0fede643d64a62c9",
+      "git": "forrasok/moodle/számolások papíron-20261122/meres2konz_1.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122/meres2konz_2.png",
+      "size": 396638,
+      "sha256": "04a358c5922c7ee186c23039b3c4a46a9d404eb0168a63e310e1fd885d241a4c",
+      "git": "forrasok/moodle/számolások papíron-20261122/meres2konz_2.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122 (1)/3konz1.png",
+      "size": 341550,
+      "sha256": "e3c6cb057f63d28a419486f9ececff0dfa96cdb346439e49d7dcabae3d32b4e0",
+      "git": "forrasok/moodle/számolások papíron-20261122 (1)/3konz1.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122 (1)/3konz2.png",
+      "size": 405651,
+      "sha256": "c711c823efe0759bf77e33315abcee90e841a41df6ff93d908f6e7d896fb0db0",
+      "git": "forrasok/moodle/számolások papíron-20261122 (1)/3konz2.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122 (1)/3konz3.png",
+      "size": 535762,
+      "sha256": "8a0d53c13e9a8d6042062d6884814f763bdf118676ffa803dd82e991c76de23d",
+      "git": "forrasok/moodle/számolások papíron-20261122 (1)/3konz3.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122 (1)/3konz4.png",
+      "size": 227395,
+      "sha256": "0050372555c8bf8e8bfc681e6a09289f0c6d4b0e8af91a3b4a992ec09b53535d",
+      "git": "forrasok/moodle/számolások papíron-20261122 (1)/3konz4.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122 (2)/4konz1.png",
+      "size": 334121,
+      "sha256": "8c646483e3328dcca40d10e5800ee9504b161051eb4aafd619c258350df20064",
+      "git": "forrasok/moodle/számolások papíron-20261122 (2)/4konz1.png",
+      "excluded_public": false
+    },
+    {
+      "source": "számolások papíron-20261122 (2)/4konz2.png",
+      "size": 173792,
+      "sha256": "bc9edb5ddc5598e7fcc5b2f0354874c08edcde674944585157d677e196eeaebe",
+      "git": "forrasok/moodle/számolások papíron-20261122 (2)/4konz2.png",
+      "excluded_public": false
+    },
+    {
+      "source": "vizsgafeladat és megoldása-20261122/feladat1.pdf",
+      "size": 39937,
+      "sha256": "c1058b1bb38d171f847bebbdbbbeb26d4a74a940cb920e85db3a0e06cd0f2591",
+      "git": "forrasok/moodle/vizsgafeladat és megoldása-20261122/feladat1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "vizsgafeladat és megoldása-20261122/hang_jelek1.mat",
+      "size": 765577,
+      "sha256": "4e230c5ff9fd71130d997964ad9b6075cda1ab5a6d8e4bdfcc375e7e29d3aba5",
+      "git": "forrasok/moodle/vizsgafeladat és megoldása-20261122/hang_jelek1.mat",
+      "excluded_public": false
+    },
+    {
+      "source": "vizsgafeladat és megoldása-20261122/vizsgapelda.m",
+      "size": 1047,
+      "sha256": "d33b5be1be6fb62358c1f943c922b62dcb921736b7564cc43c339a8342f5d628",
+      "git": "forrasok/moodle/vizsgafeladat és megoldása-20261122/vizsgapelda.m",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/2026_27_1_GKLM_FKTM013.pdf",
+      "size": 89451,
+      "sha256": "28cad7614be4a02178649b2fe687434c0dac38a61cabec0ec142b08956aa16b1",
+      "git": "forrasok/moodle_foanyag/2026_27_1_GKLM_FKTM013.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/Centrális határeloszlás-tétel.pdf",
+      "size": 263446,
+      "sha256": "bc0d6de7d9fb6f4097306701803754dfebf46740afed514bae806f41d341bb81",
+      "git": "forrasok/moodle_foanyag/Centrális határeloszlás-tétel.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/Kepletek.txt",
+      "size": 2023,
+      "sha256": "f98809e79d2b56b25a9af83231f7e81dd86d4c0de424693bfc6a60a9e050eab1",
+      "git": "forrasok/moodle_foanyag/Kepletek.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/MATLAB hallgatói hozzáférés.pdf",
+      "size": 59322,
+      "sha256": "31e15b337a379fcd1fc4ad603251a3a76fe1822e51894f8162ec769f4118a188",
+      "git": "forrasok/moodle_foanyag/MATLAB hallgatói hozzáférés.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/Wayback Machine.pdf",
+      "size": 137314,
+      "sha256": "28426057db26eb626b31d6f7953a038c444da493a66f1d59286e4d7fe2e78500",
+      "git": "forrasok/moodle_foanyag/Wayback Machine.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/elmeleti_kerdesek_vizsgahoz.pdf",
+      "size": 105013,
+      "sha256": "d105d2fa76312d0631da49030603bc4acf6cc0752f2f36ed6216ee2df9592714",
+      "git": "forrasok/moodle_foanyag/elmeleti_kerdesek_vizsgahoz.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/feladat1.pdf",
+      "size": 64935,
+      "sha256": "1f2915b832e5a36a41996f87ceb337d8554048a6d13b6cf4187d63ef70c6bd19",
+      "git": "forrasok/moodle_foanyag/feladat1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/kovetelmeny_mereselmelet_lev.pdf",
+      "size": 211445,
+      "sha256": "fbd7f7b1fe2381848638a363628488338d1bd3b0c44c36036c5b4396a6bab329",
+      "git": "forrasok/moodle_foanyag/kovetelmeny_mereselmelet_lev.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/linkek_5.konzultaciora.txt",
+      "size": 852,
+      "sha256": "4c39435de4d00c74f324b2e79a6ac860f31ee6d316f7e1a0336ebf3242a74570",
+      "git": "forrasok/moodle_foanyag/linkek_5.konzultaciora.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_01.pdf",
+      "size": 745070,
+      "sha256": "21713bd779df4449b4507f6c88ed21941600d77906428fc34cd87570b4053467",
+      "git": "forrasok/moodle_foanyag/meres_01.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_02_1.pdf",
+      "size": 426753,
+      "sha256": "1e659790dc41d5161c577b44fa963d6951672a4a96ad4c1bb1d6f98e8af27251",
+      "git": "forrasok/moodle_foanyag/meres_02_1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_02_2.pdf",
+      "size": 2152155,
+      "sha256": "59e91ce766b5696a454dc657cbbf667f94c0a8dbe5b34195cf22706b0a006d00",
+      "git": "forrasok/moodle_foanyag/meres_02_2.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_03.pdf",
+      "size": 1244466,
+      "sha256": "fafab0969838e62b93593f006949aa3f6e7d19ebe1ae07704b5b3cfcbe0aa0dd",
+      "git": "forrasok/moodle_foanyag/meres_03.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_04_1.pdf",
+      "size": 1056015,
+      "sha256": "f5e16c6b4eb146bfe06fd3f87022eca5304f30ee6306fe8c28fb8dc47290fe03",
+      "git": "forrasok/moodle_foanyag/meres_04_1.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_04_2.pdf",
+      "size": 382883,
+      "sha256": "31a6e24e96845a4350fab27c98667ad26d8d009f94625613bd315724e2d33436",
+      "git": "forrasok/moodle_foanyag/meres_04_2.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_08.pdf",
+      "size": 438282,
+      "sha256": "e543f92b46bd448cc651528e8d35d811bc5cf2de1294e2c1673852178b80a644",
+      "git": "forrasok/moodle_foanyag/meres_08.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/meres_10.pdf",
+      "size": 322321,
+      "sha256": "e61f4a747d5e40952c95130b5b96268485c30d81011aeda3a085545e2cd5fb0b",
+      "git": "forrasok/moodle_foanyag/meres_10.pdf",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/vizsga_jotanacsok.txt",
+      "size": 3694,
+      "sha256": "02092930ac5387de193cb961f35a535cc2c74f10847114af7326d637306ad3ff",
+      "git": "forrasok/moodle_foanyag/vizsga_jotanacsok.txt",
+      "excluded_public": false
+    },
+    {
+      "source": "course_sources/vizsgarend_lev_meres.pdf",
+      "size": 24774,
+      "sha256": "3ed54168d4ab0912acfdf3e296fb6f2eb30236ba801af9fce9e3336ae30b2de5",
+      "git": "forrasok/moodle_foanyag/vizsgarend_lev_meres.pdf",
+      "excluded_public": false
+    }
+  ],
+  "matlab_data": [
+    "240_11240.wav",
+    "A.dat",
+    "Ab.csv",
+    "As.dat",
+    "At.dat",
+    "M.dat",
+    "adat.xls",
+    "adatok.xls",
+    "adatok_motor.xlsx",
+    "b.dat",
+    "baba1.mat",
+    "barometer.mat",
+    "bs.dat",
+    "bt.dat",
+    "cso_adatok.mat",
+    "fuvola8.wav",
+    "guitar_A.wav",
+    "hang_jelek.mat",
+    "hang_jelek1.mat",
+    "havi_napfolt.csv",
+    "korkup1.mat",
+    "minta_kész1.xls",
+    "motorhang.mat",
+    "non_stat_signal.mat",
+    "rad_bomlas.mat",
+    "result.mat",
+    "rezges5.mat",
+    "szferoid1.mat",
+    "teglatest1.mat",
+    "villanymotor.mat"
+  ],
+  "source_collections": [
+    "course_unpacked",
+    "course_sources/*.pdf",
+    "course_sources/*.txt"
+  ]
+}

@@ -1,0 +1,8 @@
+A Matlabhoz hasonló szabad-szoftver letöltése:
+
+Octave induló oldal:
+http://www.gnu.org/software/octave/download.html
+
+Telepítési instrukciók és a 7z tömörített verziók letöltése:
+http://wiki.octave.org/Octave_for_Windows 
+

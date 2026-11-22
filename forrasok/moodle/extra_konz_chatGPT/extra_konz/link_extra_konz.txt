@@ -1,0 +1,15 @@
+
+
+Hatasfokmezo, vagy mas neven hatasfokterkephez illusztracio:
+https://omnibusz.blog.hu/2020/11/08/dizel_helyett_villany_az_elektromos_motorokrol_iii_resz_199
+
+
+"Az ön által csatolt legfrissebb_meresek.xlsx-ben a D,K,U oszlopaira tettem egy szűrést (0-kat kivettem), majd beszoroztam az áttét szorzójával, végül a fordulatszámot egészre, a többi adatot két tizedesre kerekítettem, így kaptam a csatolt file-t: adatok_motor.xlsx.
+Ha ezt ábrázolja, akkor lényegesen szebb eredményt kap."
+
+
+
+Chat a chatGPT-vel:
+https://chatgpt.com/share/40c474de-9540-4708-ab9d-c903c5f8594f
+
+ 

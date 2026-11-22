@@ -1,0 +1,257 @@
+% Jellegzetes t�rbeli alakzatok t�rfogat �s felsz�n sz�m�t�s�hoz k�pletek:
+
+%G�mb:
+
+    %T�rfogat:
+    %V = (4*r^3*pi)/3
+    
+    %Felsz�n:
+    %A = 4*r^2*pi
+
+%T�glatest:
+
+    %T�rfogat:
+    %V = a*b*c
+    
+    %Felsz�n:
+    %A = (a*b+a*c+b*c)*2
+
+%Kocka:
+
+    %T�rfogat:
+    %V = a^3
+    
+    %Felsz�n:
+    %A = a^2*6
+
+%Henger:
+
+    %T�rfogat:
+    %V = r^2*pi*mhenger
+    
+    %Felsz�n:
+    %A = 2*r^2*pi+2*r*pi*mhenger
+
+%N�gyzet alap� has�b:
+
+    %T�rfogat:
+    %V = a^2*b
+    
+    %Felsz�n:
+    %A = 2*a^2+4*a*b
+
+%N�gyzet alap� g�la:
+
+    %T�rfogat:
+    %V = (a^2*mg�la)/3
+    
+    %Felsz�n:
+    %A = (a^2+4*a*ma)/2
+
+%K�p:
+
+    %T�rfogat:
+    %V = (r^2*pi*mk�p)/3
+    
+    %Felsz�n:
+    %A = 4*r^2*pi
+    
+%Jellegzetes s�kbeli alakzatok ker�let �s ter�let sz�m�t�s�hoz k�pletek:
+
+%N�gyzet:
+
+    %Ter�let:
+    %T = a^2
+    
+    %Ker�let:
+    %K = 4*a
+    
+%T�glalap:
+
+    %Ter�let:
+    %T = a*b
+    
+    %Ker�let:
+    %K = (a+b)*2
+    
+%H�romsz�g:
+
+    %Ter�let:
+    %T = (a*ma)/2
+    
+    %Ker�let:
+    %K = a+b+c
+    
+%K�r:
+
+    %Ter�let:
+    %T = r^2*pi
+    
+    %Ker�let:
+    %K = 2*r*pi
+
+%Rombusz:
+
+    %Ter�let1:
+    %T1 = a*ma
+    
+    %Ter�let2:
+    %T2 = (e*f)/2         "e" �s "f" az �tl�k megnevez�sei
+    
+    %Ker�let:
+    %K = 4*a
+    
+%Deltoid:
+
+    %Ter�let:
+    %T = (e*f)/2
+    
+    %Ker�let:
+    %K = (a+b)*2
+
+%Paralelogramma:
+
+    %Ter�let:
+    %T = a*ma
+    
+    %Ker�let:
+    %K = (a+b)*2
+
+%Trap�z:
+
+    %Ter�let:
+    %T = ((a+c)*ma)/2
+    
+    %Ker�let:
+    %K = a+b+c+d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

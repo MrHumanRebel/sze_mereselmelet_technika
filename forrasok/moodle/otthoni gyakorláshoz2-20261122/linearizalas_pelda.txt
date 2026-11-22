@@ -1,0 +1,32 @@
+
+
+Kedves Hallgatók!
+
+Többüktől hallottam, illetve a vizsgaeredményekből is látszik, hogy a lineáris regresszió témájának egy fontos részét nem tudják használható tudássá alakítani. Konkrétan a linearizálás problémájára gondolok, amikor is egy nem lineáris függvénykapcsolatból kell egy kis átalakítással lineáris összefüggést előálltani, azért, hogy Berta Miklós tanár úr által megírt lin_reg.m függvénnyel az illesztés paramétereit illetve azok szórását is meg tudják határozni. Megjegyzés: a Matlabban vannak beépített parancsok függvények illesztésére, de azok a paraméterek hibáit nem számolják ki!) Arra gondoltam, hogy az egyik mintapélda megoldásában nyújtanék Önöknek segítséget, remélve, hogy a vizsgán (ha ilyen feladatot kapnak) jobban fognak szerepelni.
+
+A kiválasztott feladat a "feladatok.pdf"-ben a másodikkal, azaz a légnyomásos példával szeretnék foglalkozni, ami tipikus példája a linearizálásnak. A megoldáshoz szükségük lesz a lineáris regressziót számoló függvényre is, amit be kell másolni abba a mappába amiben dolgoznak, azzaz a barometer.mat mellé.
+Az adatok betöltése után először is az adatsort kell végignézni, hogy durva hibák nincsenek-e bent. Ezt akkor is meg kell tenni, ha a feladat külön nem kéri! Látható ebben a feladatban, hogy az utolsó pár légnyomásadat negatív, ami csak műszeres hiba lehet, ezeket ki kell zárni a mérésből.
+>> p=p(1:end-n);
+ahol az n, az utolsó n db mérési eredmény. Természetesen ugyanezt el kell végezni a h-ra is!
+Ha csak egy adatot kell kibobni az adatsorból akkor ezt írják:
+>> p(n)=[];
+Itt a p vektor n. elemét töröltük.
+Megjegyzés: a mért adatok nem m-ben és Pa-ban vannak megadva, így a végeredményt is csak az adott önkényes egységekben tudjuk megadni.
+
+Látható hogy itt nem lineáris a kapcsolat a két mennyiség között, viszont lineárissá lehet tenni! Ezt hívják linearizálásnak. Venni kell a légnyomás-magasság összefüggés természetes alapú logaritmusát, ekkor a bal oldali ln(p) olyan alakú lesz, mint az egy egyenes egyenlete: m*x+b, ahol az x a h.
+
+Lásd csatolt kép! kep1 
+
+Lehet is ellenőrizni Matlabbal, hogy tényleg egyenest kapunk-e:
+>> plot(h,log(p))
+a sima log a matlabban a természetes alapú logaritmust jelöli, lásd: help log parancs.
+Erre az egyenesre kell használni a lin_reg függvényt. A lineáris regresszió számításakor az egyenes paraméterei (meredekség és tengelymetszet) a (-ró_0*g/p_0) és ln(p_0) lesznek a hibáikkal együtt. Utána még ezt vissza kell alakítani matematikai átalakítással p_0-ra, illetve hibaszámítás és hibaterjedési törvényekkel lehet a p_0 hibáját és ró_0-t megkapni.
+
+Lásd másik kép! kep2  
+
+
+Terészetesen nem kötelező végigszámolni papíron a parciális deriváltakat, mint ahogy én azt tettem, lehet numerikusan is közelítő jelleggel számolni. Hasonlóra van mintapélda a Mérés_04-ben.
+
+Remélem, hogy ha ezt a feladatot végigszámolják, akkor már nem jelent gondot Önöknek a hasonló vizsgafeladat sem!
+
+Üdvözlettel: Szutyányi Márk
